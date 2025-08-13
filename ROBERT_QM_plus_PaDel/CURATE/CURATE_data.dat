@@ -1,0 +1,1458 @@
+ROBERT v 1.2.1 2025/06/06 17:27:46 
+How to cite: Dalmau, D.; Alegre Requena, J. V. WIREs Comput Mol Sci. 2024, DOI: 10.1002/WCMS.1733
+
+Command line used in ROBERT: python -m robert --names "Name" --y "YSI" --csv_name "YSI-2d-padel_QC.csv"
+
+
+o  Starting data curation with the CURATE module
+
+o  Database YSI-2d-padel_QC.csv loaded successfully, including:
+   - 663 datapoints
+   - 1466 accepted descriptors
+   - 1 ignored descriptors
+   - 0 discarded descriptors
+
+o  Analyzing categorical variables
+   - No categorical variables were found
+
+o  Duplication filters activated
+   Excluded datapoints:
+   -  No datapoints were removed
+
+o  Correlation filter activated with these thresholds: thres_x = 0.7, thres_y = 0.001
+   Excluded descriptors:
+   - LUMO: R**2 = 0.86 with HOMO-LUMO gap
+   - EA: R**2 = 0.75 with HOMO-LUMO gap
+   - Hardness: R**2 = 0.82 with HOMO-LUMO gap
+   - HOMO-LUMO gap: R**2 = 0.88 with Softness
+   - Second IP: R**2 = 0.71 with IP
+   - Total charge: error in R**2 with the YSI values (are all the values the same?)
+   - Global SASA: R**2 = 0.89 with Total polariz. alpha
+   - G solv. in H2O: R**2 = 0.71 with ATSC0s
+   - nHsOH: R**2 = 0.8 with G of H-bonds H2O
+   - nsOH: R**2 = 0.8 with G of H-bonds H2O
+   - SHBd: R**2 = 0.72 with G of H-bonds H2O
+   - SHsOH: R**2 = 0.82 with G of H-bonds H2O
+   - SsOH: R**2 = 0.79 with G of H-bonds H2O
+   - minHsOH: R**2 = 0.76 with G of H-bonds H2O
+   - minsOH: R**2 = 0.71 with G of H-bonds H2O
+   - maxHsOH: R**2 = 0.77 with G of H-bonds H2O
+   - maxsOH: R**2 = 0.72 with G of H-bonds H2O
+   - MLFER_A: R**2 = 0.75 with G of H-bonds H2O
+   - Fermi-level: R**2 = 0.71 with Softness
+   - MolLogP: R**2 = 0.76 with Total polariz. alpha
+   - apol: R**2 = 0.95 with Total polariz. alpha
+   - nAtom: R**2 = 0.82 with Total polariz. alpha
+   - Total polariz. alpha: R**2 = 0.96 with nHeavyAtom
+   - Electronegativity: R**2 = 0.78 with Softness
+   - Electrophil. idx: R**2 = 0.83 with Softness
+   - Nucleophilicity idx: R**2 = 0.75 with Softness
+   - Softness: R**2 = 0.94 with Second EA
+   - S0-T1 gap: R**2 = 0.75 with Second EA
+   - Second EA: R**2 = 0.74 with AATS0v
+   - ALogp2: R**2 = 0.0 with the YSI values
+   - nBondsS2: R**2 = 0.76 with AMR
+   - nBondsS3: R**2 = 0.85 with AMR
+   - AMR: R**2 = 0.74 with ETA_dBeta
+   - naAromAtom: R**2 = 1.0 with nAromBond
+   - AATS0v: R**2 = 0.77 with nAromBond
+   - AATS1v: R**2 = 0.78 with nAromBond
+   - AATS2v: R**2 = 0.79 with nAromBond
+   - AATS0p: R**2 = 0.76 with nAromBond
+   - AATS2p: R**2 = 0.72 with nAromBond
+   - AATS0i: R**2 = 0.76 with nAromBond
+   - GATS1v: R**2 = 0.72 with nAromBond
+   - nAromBond: R**2 = 0.98 with nBondsM
+   - nHeavyAtom: R**2 = 0.91 with nC
+   - nH: R**2 = 0.0 with the YSI values
+   - nB: error in R**2 with the YSI values (are all the values the same?)
+   - ATS1m: R**2 = 0.86 with nC
+   - ATS2m: R**2 = 0.81 with nC
+   - ATS3m: R**2 = 0.82 with nC
+   - ATS4m: R**2 = 0.8 with nC
+   - ATS5m: R**2 = 0.75 with nC
+   - ATS0v: R**2 = 0.97 with nC
+   - ATS1v: R**2 = 0.96 with nC
+   - ATS2v: R**2 = 0.95 with nC
+   - ATS3v: R**2 = 0.91 with nC
+   - ATS4v: R**2 = 0.88 with nC
+   - ATS5v: R**2 = 0.82 with nC
+   - ATS6v: R**2 = 0.7 with nC
+   - ATS1e: R**2 = 0.74 with nC
+   - ATS0p: R**2 = 0.96 with nC
+   - ATS1p: R**2 = 0.95 with nC
+   - ATS2p: R**2 = 0.92 with nC
+   - ATS3p: R**2 = 0.88 with nC
+   - ATS4p: R**2 = 0.84 with nC
+   - ATS5p: R**2 = 0.81 with nC
+   - ATS6p: R**2 = 0.7 with nC
+   - ATS1i: R**2 = 0.71 with nC
+   - ATS1s: R**2 = 0.71 with nC
+   - ATSC0v: R**2 = 0.84 with nC
+   - ATSC0p: R**2 = 0.85 with nC
+   - ATSC0i: R**2 = 0.84 with nC
+   - SpAbs_Dzs: R**2 = 0.73 with nC
+   - SpMax_Dzs: R**2 = 0.72 with nC
+   - SpAD_Dzs: R**2 = 0.72 with nC
+   - EE_Dzs: R**2 = 0.72 with nC
+   - nC: R**2 = 0.92 with nBonds
+   - WTPT-5: R**2 = 0.99 with nN
+   - nO: R**2 = 0.89 with ATSC0c
+   - nS: error in R**2 with the YSI values (are all the values the same?)
+   - nP: error in R**2 with the YSI values (are all the values the same?)
+   - nF: R**2 = 0.0 with the YSI values
+   - nCl: R**2 = 0.0 with the YSI values
+   - nBr: R**2 = 0.0 with the YSI values
+   - nI: error in R**2 with the YSI values (are all the values the same?)
+   - nX: R**2 = 0.0 with the YSI values
+   - ATS2s: R**2 = 0.7 with ATS0m
+   - ATSC0m: R**2 = 0.85 with ATS0m
+   - ATS0m: R**2 = 0.74 with SP-0
+   - ATS7m: R**2 = 0.92 with ATS6m
+   - ATS8m: R**2 = 0.78 with ATS6m
+   - ATS7v: R**2 = 0.94 with ATS6m
+   - ATS8v: R**2 = 0.83 with ATS6m
+   - ATS0e: R**2 = 0.76 with ATS6m
+   - ATS6e: R**2 = 0.75 with ATS6m
+   - ATS7e: R**2 = 0.87 with ATS6m
+   - ATS8e: R**2 = 0.83 with ATS6m
+   - ATS7p: R**2 = 0.91 with ATS6m
+   - ATS8p: R**2 = 0.83 with ATS6m
+   - ATS0i: R**2 = 0.71 with ATS6m
+   - ATS7i: R**2 = 0.84 with ATS6m
+   - ATS8i: R**2 = 0.82 with ATS6m
+   - ATS5s: R**2 = 0.71 with ATS6m
+   - ATS6s: R**2 = 0.87 with ATS6m
+   - ATS7s: R**2 = 0.94 with ATS6m
+   - ATS8s: R**2 = 0.86 with ATS6m
+   - AATS8v: R**2 = 0.72 with ATS6m
+   - SpAbs_DzZ: R**2 = 0.82 with ATS6m
+   - SpMax_DzZ: R**2 = 0.82 with ATS6m
+   - SpDiam_DzZ: R**2 = 0.79 with ATS6m
+   - SpAD_DzZ: R**2 = 0.82 with ATS6m
+   - SpMAD_DzZ: R**2 = 0.7 with ATS6m
+   - EE_DzZ: R**2 = 0.82 with ATS6m
+   - SpAbs_Dzm: R**2 = 0.82 with ATS6m
+   - SpMax_Dzm: R**2 = 0.82 with ATS6m
+   - SpDiam_Dzm: R**2 = 0.79 with ATS6m
+   - SpAD_Dzm: R**2 = 0.82 with ATS6m
+   - SpMAD_Dzm: R**2 = 0.7 with ATS6m
+   - EE_Dzm: R**2 = 0.82 with ATS6m
+   - SpAbs_Dzv: R**2 = 0.81 with ATS6m
+   - SpMax_Dzv: R**2 = 0.82 with ATS6m
+   - SpDiam_Dzv: R**2 = 0.79 with ATS6m
+   - SpAD_Dzv: R**2 = 0.82 with ATS6m
+   - EE_Dzv: R**2 = 0.82 with ATS6m
+   - SpAbs_Dze: R**2 = 0.82 with ATS6m
+   - SpMax_Dze: R**2 = 0.82 with ATS6m
+   - SpDiam_Dze: R**2 = 0.79 with ATS6m
+   - SpAD_Dze: R**2 = 0.82 with ATS6m
+   - SpMAD_Dze: R**2 = 0.7 with ATS6m
+   - EE_Dze: R**2 = 0.82 with ATS6m
+   - SpAbs_Dzp: R**2 = 0.74 with ATS6m
+   - SpMax_Dzp: R**2 = 0.75 with ATS6m
+   - SpDiam_Dzp: R**2 = 0.71 with ATS6m
+   - SpAD_Dzp: R**2 = 0.74 with ATS6m
+   - EE_Dzp: R**2 = 0.75 with ATS6m
+   - SpAbs_Dzi: R**2 = 0.83 with ATS6m
+   - SpMax_Dzi: R**2 = 0.83 with ATS6m
+   - SpDiam_Dzi: R**2 = 0.79 with ATS6m
+   - SpAD_Dzi: R**2 = 0.83 with ATS6m
+   - SpMAD_Dzi: R**2 = 0.7 with ATS6m
+   - EE_Dzi: R**2 = 0.83 with ATS6m
+   - SpDiam_Dzs: R**2 = 0.76 with ATS6m
+   - nBonds2: R**2 = 0.74 with ATS6m
+   - nBondsS: R**2 = 0.73 with ATS6m
+   - ATS6m: R**2 = 0.72 with SpMax8_Bhm
+   - ATS2e: R**2 = 0.96 with ATS3e
+   - ATS3e: R**2 = 0.9 with ATS4e
+   - ATS4e: R**2 = 0.88 with ATS5e
+   - ATS2i: R**2 = 0.89 with ATS5e
+   - ATS3i: R**2 = 0.85 with ATS5e
+   - ATS4i: R**2 = 0.83 with ATS5e
+   - ATS5i: R**2 = 0.99 with ATS5e
+   - ATS6i: R**2 = 0.85 with ATS5e
+   - ATS5e: R**2 = 0.72 with ATS3s
+   - ATS0s: R**2 = 0.76 with ATSC0s
+   - ATS4s: R**2 = 0.88 with ATS3s
+   - ATS3s: R**2 = 0.71 with SpMax6_Bhs
+   - AATSC0m: R**2 = 0.85 with AATS0m
+   - nsBr: R**2 = 0.71 with AATS0m
+   - SsBr: R**2 = 0.71 with AATS0m
+   - minsBr: R**2 = 0.71 with AATS0m
+   - maxsBr: R**2 = 0.71 with AATS0m
+   - ETA_dAlpha_A: R**2 = 0.74 with AATS0m
+   - ETA_dPsi_B: R**2 = 0.71 with AATS0m
+   - AATS1m: R**2 = 0.88 with AATS2m
+   - AATS3m: R**2 = 0.73 with AATS2m
+   - GATS1m: R**2 = 0.72 with AATS2m
+   - AVP-1: R**2 = 0.75 with AATS2m
+   - AATS2m: R**2 = 0.78 with Mv
+   - AATS4m: R**2 = 0.79 with AATS4v
+   - AATS6m: R**2 = 0.72 with AATS5m
+   - AATS5m: R**2 = 0.85 with AATS5v
+   - AATS8m: R**2 = 0.82 with AATS7m
+   - AATS7m: R**2 = 0.85 with AATS7v
+   - AATS3v: R**2 = 0.93 with AATS3p
+   - AATS4v: R**2 = 0.93 with AATS4p
+   - AATS6v: R**2 = 0.73 with AATS5v
+   - AATS5v: R**2 = 0.94 with AATS5p
+   - AATS8e: R**2 = 0.78 with AATS7v
+   - AATS7v: R**2 = 0.96 with AATS7p
+   - AATS0e: R**2 = 0.94 with AATS1e
+   - AATS2e: R**2 = 0.92 with AATS1e
+   - AATS3e: R**2 = 0.71 with AATS1e
+   - AATS1e: R**2 = 0.87 with AATSC0c
+   - AATS5i: R**2 = 0.86 with AATS5e
+   - AATS6i: R**2 = 0.95 with AATS6e
+   - AATS7e: R**2 = 0.78 with AATS7p
+   - AATS1i: R**2 = 0.81 with AATS1p
+   - AATS2i: R**2 = 0.93 with AATS1p
+   - AATSC0v: R**2 = 0.88 with AATS1p
+   - AATSC1v: R**2 = 0.72 with AATS1p
+   - AATSC0p: R**2 = 0.79 with AATS1p
+   - MATS1v: R**2 = 0.72 with AATS1p
+   - GATS1p: R**2 = 0.92 with AATS1p
+   - GATS1i: R**2 = 0.9 with AATS1p
+   - AATS1p: R**2 = 0.7 with nBondsM
+   - AATS3i: R**2 = 0.9 with AATS3p
+   - SpMax1_Bhv: R**2 = 0.72 with AATS3p
+   - SpMax1_Bhe: R**2 = 0.71 with AATS3p
+   - SpMin1_Bhi: R**2 = 0.71 with AATS3p
+   - AATS3p: R**2 = 0.7 with Mp
+   - AATS4p: R**2 = 0.71 with TpiPC
+   - SpMax2_Bhm: R**2 = 0.72 with AATS5p
+   - AATS7p: R**2 = 0.76 with AATS6p
+   - GATS6v: R**2 = 0.73 with AATS6p
+   - GATS6p: R**2 = 0.73 with AATS6p
+   - GATS6i: R**2 = 0.73 with AATS6p
+   - AATS6p: R**2 = 0.71 with SpMax2_Bhv
+   - AATS8i: R**2 = 0.78 with AATS8p
+   - AATS8s: R**2 = 0.82 with AATS8p
+   - GATS8m: R**2 = 0.74 with AATS8p
+   - GATS7v: R**2 = 0.71 with AATS8p
+   - GATS8v: R**2 = 0.78 with AATS8p
+   - GATS8p: R**2 = 0.77 with AATS8p
+   - GATS8i: R**2 = 0.77 with AATS8p
+   - topoDiameter: R**2 = 0.75 with AATS8p
+   - SpMAD_D: R**2 = 0.72 with AATS8p
+   - AATS1s: R**2 = 0.72 with AATS0s
+   - AATS2s: R**2 = 0.7 with AATS0s
+   - AATS0s: R**2 = 0.94 with AATSC0s
+   - AATS4s: R**2 = 0.0 with the YSI values
+   - AATS6s: R**2 = 0.7 with GATS6m
+   - AATS7s: R**2 = 0.76 with GATS7m
+   - ATSC1c: R**2 = 0.83 with ATSC0c
+   - ATSC0e: R**2 = 0.9 with ATSC0c
+   - ATSC0c: R**2 = 0.73 with AATSC0c
+   - ATSC2c: R**2 = 0.0 with the YSI values
+   - ATSC3c: R**2 = 0.0 with the YSI values
+   - ATSC7c: R**2 = 0.0 with the YSI values
+   - ATSC8c: R**2 = 0.0 with the YSI values
+   - AATSC1m: R**2 = 0.83 with ATSC1m
+   - MATS1m: R**2 = 0.87 with ATSC1m
+   - ATSC2m: R**2 = 0.0 with the YSI values
+   - ATSC3m: R**2 = 0.0 with the YSI values
+   - ATSC4m: R**2 = 0.74 with ATSC4v
+   - ATSC5m: R**2 = 0.0 with the YSI values
+   - ATSC6m: R**2 = 0.9 with ATSC6v
+   - ATSC7m: R**2 = 0.88 with ATSC7v
+   - ATSC8m: R**2 = 0.8 with ATSC8v
+   - ATSC1p: R**2 = 0.88 with ATSC1v
+   - ATSC1i: R**2 = 0.78 with ATSC1v
+   - AATSC1p: R**2 = 0.74 with ATSC1v
+   - ATSC2v: R**2 = 0.92 with ATSC2p
+   - ATSC3v: R**2 = 0.0 with the YSI values
+   - ATSC4v: R**2 = 0.92 with ATSC4p
+   - ATSC5v: R**2 = 0.93 with ATSC5p
+   - ATSC6v: R**2 = 0.96 with ATSC6p
+   - ATSC7v: R**2 = 0.96 with ATSC7p
+   - ATSC8v: R**2 = 0.9 with ATSC8p
+   - ATSC1e: R**2 = 0.85 with AATSC1e
+   - ATSC2e: R**2 = 0.74 with ATSC2s
+   - ATSC4e: R**2 = 0.73 with AATSC4e
+   - ATSC5e: R**2 = 0.71 with ATSC5s
+   - ATSC6e: R**2 = 0.0 with the YSI values
+   - ATSC7e: R**2 = 0.0 with the YSI values
+   - ATSC8e: R**2 = 0.0 with the YSI values
+   - ATSC2p: R**2 = 0.97 with ATSC2i
+   - ATSC3p: R**2 = 0.98 with ATSC3i
+   - ATSC4i: R**2 = 0.98 with ATSC4p
+   - ATSC5p: R**2 = 0.99 with ATSC5i
+   - ATSC6i: R**2 = 0.99 with ATSC6p
+   - ATSC7p: R**2 = 1.0 with ATSC7i
+   - ATSC8p: R**2 = 0.99 with ATSC8i
+   - ATSC2i: R**2 = 0.79 with AATSC2p
+   - AATSC3p: R**2 = 0.71 with ATSC3i
+   - AATSC3i: R**2 = 0.71 with ATSC3i
+   - ATSC0s: R**2 = 0.75 with AATSC0s
+   - AATSC1s: R**2 = 0.79 with ATSC1s
+   - AATSC2e: R**2 = 0.74 with ATSC2s
+   - AATSC2s: R**2 = 0.84 with ATSC2s
+   - ATSC6s: R**2 = 0.0 with the YSI values
+   - ATSC8s: R**2 = 0.0 with the YSI values
+   - AATSC1c: R**2 = 0.83 with AATSC0c
+   - AATSC0e: R**2 = 0.86 with AATSC0c
+   - Mse: R**2 = 0.79 with AATSC0c
+   - Mare: R**2 = 0.7 with AATSC0c
+   - AATSC0c: R**2 = 0.82 with ETA_AlphaP
+   - AATSC2c: R**2 = 0.0 with the YSI values
+   - AATSC5c: R**2 = 0.0 with the YSI values
+   - AATSC7c: R**2 = 0.0 with the YSI values
+   - AATSC8c: R**2 = 0.0 with the YSI values
+   - AATSC2m: R**2 = 0.98 with MATS2m
+   - MATS3m: R**2 = 0.9 with AATSC3m
+   - AATSC3m: R**2 = 0.78 with GATS3m
+   - AATSC4m: R**2 = 0.86 with MATS4m
+   - AATSC5m: R**2 = 0.0 with the YSI values
+   - AATSC6m: R**2 = 0.84 with AATSC6v
+   - AATSC7m: R**2 = 0.9 with AATSC7v
+   - AATSC8m: R**2 = 0.94 with AATSC8v
+   - AATSC2v: R**2 = 0.89 with AATSC2p
+   - AATSC3v: R**2 = 0.99 with MATS3v
+   - AATSC4v: R**2 = 0.85 with AATSC4p
+   - AATSC5v: R**2 = 0.9 with AATSC5p
+   - AATSC6v: R**2 = 0.92 with AATSC6p
+   - AATSC7v: R**2 = 0.97 with AATSC7p
+   - AATSC8v: R**2 = 0.98 with AATSC8p
+   - AATSC5e: R**2 = 0.86 with AATSC5s
+   - AATSC6e: R**2 = 0.0 with the YSI values
+   - AATSC7e: R**2 = 0.0 with the YSI values
+   - AATSC8e: R**2 = 0.0 with the YSI values
+   - AATSC2i: R**2 = 0.94 with AATSC2p
+   - MATS2v: R**2 = 0.88 with AATSC2p
+   - AATSC2p: R**2 = 0.98 with MATS2p
+   - AATSC4p: R**2 = 0.89 with AATSC4i
+   - AATSC5p: R**2 = 0.92 with AATSC5i
+   - AATSC6i: R**2 = 0.91 with AATSC6p
+   - AATSC6p: R**2 = 0.9 with MATS6v
+   - AATSC7p: R**2 = 0.99 with AATSC7i
+   - AATSC8p: R**2 = 1.0 with AATSC8i
+   - AATSC1i: R**2 = 0.89 with MATS1p
+   - MATS4p: R**2 = 0.88 with AATSC4i
+   - MATS4i: R**2 = 0.98 with AATSC4i
+   - AATSC4i: R**2 = 0.78 with GATS4p
+   - MATS5v: R**2 = 0.77 with AATSC5i
+   - MATS5p: R**2 = 0.9 with AATSC5i
+   - MATS5i: R**2 = 0.97 with AATSC5i
+   - AATSC5i: R**2 = 0.7 with GATS5i
+   - MATS7m: R**2 = 0.77 with AATSC7i
+   - MATS7v: R**2 = 0.92 with AATSC7i
+   - MATS7p: R**2 = 0.99 with AATSC7i
+   - MATS7i: R**2 = 0.99 with AATSC7i
+   - MATS8m: R**2 = 0.86 with AATSC8i
+   - MATS8v: R**2 = 0.94 with AATSC8i
+   - AATSC8i: R**2 = 0.71 with MATS8e
+   - meanI: R**2 = 0.9 with AATSC0s
+   - AATSC6s: R**2 = 0.0 with the YSI values
+   - MATS2e: R**2 = 0.71 with MATS2c
+   - MATS3c: R**2 = 0.0 with the YSI values
+   - MATS6e: R**2 = 0.73 with MATS6c
+   - MATS6s: R**2 = 0.7 with MATS6c
+   - MATS7c: R**2 = 0.82 with MATS7e
+   - MATS8c: R**2 = 0.73 with MATS8e
+   - MATS2m: R**2 = 0.71 with JGT
+   - MATS4m: R**2 = 0.74 with MATS4v
+   - MATS5m: R**2 = 0.0 with the YSI values
+   - MATS6m: R**2 = 0.87 with MATS6v
+   - MATS3p: R**2 = 0.83 with MATS3v
+   - GATS3v: R**2 = 0.9 with MATS3v
+   - GATS3p: R**2 = 0.72 with MATS3v
+   - MATS4v: R**2 = 0.85 with GATS4v
+   - MATS6v: R**2 = 0.92 with MATS6p
+   - MATS3e: R**2 = 0.76 with MATS3s
+   - MATS4s: R**2 = 0.87 with MATS4e
+   - MATS4e: R**2 = 0.7 with GATS4m
+   - MATS5e: R**2 = 0.0 with the YSI values
+   - MATS7s: R**2 = 0.89 with MATS7e
+   - MATS8s: R**2 = 0.89 with MATS8e
+   - MATS1i: R**2 = 0.93 with MATS1p
+   - MATS2i: R**2 = 0.95 with MATS2p
+   - MATS2p: R**2 = 0.71 with GATS2v
+   - MATS6i: R**2 = 0.93 with MATS6p
+   - MATS8p: R**2 = 0.99 with MATS8i
+   - MATS3i: R**2 = 0.9 with GATS3i
+   - GATS5s: R**2 = 0.73 with MATS5s
+   - GATS2e: R**2 = 0.8 with GATS2c
+   - GATS3e: R**2 = 0.83 with GATS3c
+   - GATS3s: R**2 = 0.72 with GATS3c
+   - GATS4e: R**2 = 0.88 with GATS4c
+   - GATS4s: R**2 = 0.76 with GATS4c
+   - GATS5e: R**2 = 0.85 with GATS5c
+   - GATS6e: R**2 = 0.86 with GATS6c
+   - GATS6s: R**2 = 0.81 with GATS6c
+   - GATS7e: R**2 = 0.8 with GATS7c
+   - GATS7s: R**2 = 0.76 with GATS7c
+   - GATS8e: R**2 = 0.8 with GATS8c
+   - GATS8s: R**2 = 0.83 with GATS8c
+   - GATS7m: R**2 = 0.77 with GATS7p
+   - GATS2p: R**2 = 0.9 with GATS2v
+   - GATS2v: R**2 = 0.85 with GATS2i
+   - GATS4v: R**2 = 0.91 with GATS4p
+   - GATS5v: R**2 = 0.94 with GATS5p
+   - GATS1s: R**2 = 0.84 with GATS1e
+   - GATS4p: R**2 = 0.98 with GATS4i
+   - GATS5p: R**2 = 0.97 with GATS5i
+   - GATS7p: R**2 = 1.0 with GATS7i
+   - GATS2s: R**2 = 0.0 with the YSI values
+   - SM1_Dzm: R**2 = 1.0 with SM1_DzZ
+   - SM1_DzZ: R**2 = 0.96 with SM1_Dzv
+   - VE1_DzZ: R**2 = 0.0 with the YSI values
+   - VE1_Dzm: R**2 = 0.76 with VE2_DzZ
+   - VE2_Dzm: R**2 = 1.0 with VE2_DzZ
+   - VE1_Dze: R**2 = 0.76 with VE2_DzZ
+   - VE2_Dze: R**2 = 1.0 with VE2_DzZ
+   - VE1_Dzi: R**2 = 0.72 with VE2_DzZ
+   - VE2_Dzi: R**2 = 0.96 with VE2_DzZ
+   - VE3_Dzm: R**2 = 0.92 with VE3_DzZ
+   - VE3_Dzv: R**2 = 0.89 with VE3_DzZ
+   - VE3_Dze: R**2 = 0.94 with VE3_DzZ
+   - VE3_Dzp: R**2 = 0.91 with VE3_DzZ
+   - VE3_Dzi: R**2 = 0.92 with VE3_DzZ
+   - VR2_DzZ: R**2 = 0.86 with VR1_DzZ
+   - VR1_Dzm: R**2 = 1.0 with VR1_DzZ
+   - VR2_Dzm: R**2 = 0.87 with VR1_DzZ
+   - VR1_DzZ: R**2 = 0.87 with VR1_Dzv
+   - VR3_Dzm: R**2 = 1.0 with VR3_DzZ
+   - VR3_Dzv: R**2 = 0.97 with VR3_DzZ
+   - VR3_Dze: R**2 = 1.0 with VR3_DzZ
+   - VR3_DzZ: R**2 = 0.95 with VR3_Dzp
+   - SpMAD_Dzv: R**2 = 0.91 with SpMAD_Dzp
+   - SM1_Dze: R**2 = 0.99 with SM1_Dzv
+   - SM1_Dzp: R**2 = 0.99 with SM1_Dzv
+   - SM1_Dzv: R**2 = 0.97 with SM1_Dzi
+   - VE1_Dzv: R**2 = 0.0 with the YSI values
+   - VE2_Dzv: R**2 = 0.75 with VE2_Dzp
+   - VR2_Dzv: R**2 = 0.89 with VR1_Dzv
+   - VR1_Dze: R**2 = 0.87 with VR1_Dzv
+   - VR1_Dzv: R**2 = 0.89 with VR1_Dzp
+   - VR2_Dze: R**2 = 0.0 with the YSI values
+   - TIC0: R**2 = 0.72 with SpMAD_Dzp
+   - SpMAD_Dzp: R**2 = 0.74 with nRotB
+   - VE1_Dzp: R**2 = 0.85 with VE2_Dzp
+   - VR2_Dzp: R**2 = 0.91 with VR1_Dzp
+   - VR1_Dzi: R**2 = 0.83 with VR1_Dzp
+   - VR3_Dzi: R**2 = 0.95 with VR3_Dzp
+   - VR3_Dzs: R**2 = 0.75 with VR3_Dzp
+   - VR3_D: R**2 = 0.76 with VR3_Dzp
+   - SM1_Dzs: R**2 = 0.89 with SM1_Dzi
+   - nHBa: R**2 = 0.92 with SM1_Dzi
+   - SHBa: R**2 = 0.81 with SM1_Dzi
+   - SM1_Dzi: R**2 = 0.74 with ETA_AlphaP
+   - VR2_Dzi: R**2 = 0.0 with the YSI values
+   - bpol: R**2 = 0.73 with SpMAD_Dzs
+   - SpMAD_Dzs: R**2 = 0.76 with VP-0
+   - VE1_Dzs: R**2 = 0.0 with the YSI values
+   - VR1_Dzs: R**2 = 0.87 with VR2_Dzs
+   - BCUTp-1h: R**2 = 0.72 with SpMin1_Bhv
+   - SpMax6_Bhm: R**2 = 0.72 with nBonds
+   - SpMax7_Bhm: R**2 = 0.77 with nBonds
+   - SpMax8_Bhm: R**2 = 0.73 with nBonds
+   - SpMax6_Bhv: R**2 = 0.72 with nBonds
+   - SpMax7_Bhv: R**2 = 0.77 with nBonds
+   - SpMax8_Bhv: R**2 = 0.73 with nBonds
+   - SpMax7_Bhe: R**2 = 0.74 with nBonds
+   - SpMax8_Bhe: R**2 = 0.72 with nBonds
+   - SpMax6_Bhp: R**2 = 0.7 with nBonds
+   - SpMax7_Bhp: R**2 = 0.76 with nBonds
+   - SpMax8_Bhp: R**2 = 0.72 with nBonds
+   - SpMax7_Bhi: R**2 = 0.71 with nBonds
+   - SpMax7_Bhs: R**2 = 0.72 with nBonds
+   - SP-0: R**2 = 0.87 with nBonds
+   - SP-1: R**2 = 0.96 with nBonds
+   - SP-2: R**2 = 0.9 with nBonds
+   - nBonds: R**2 = 0.9 with SP-3
+   - nBondsD2: R**2 = 1.0 with nBondsD
+   - C1SP1: R**2 = 0.7 with nBondsT
+   - nBondsT: R**2 = 0.89 with ntsC
+   - nBondsQ: error in R**2 with the YSI values (are all the values the same?)
+   - C2SP2: R**2 = 0.92 with nBondsM
+   - Mv: R**2 = 0.8 with nBondsM
+   - Mp: R**2 = 0.82 with nBondsM
+   - Mi: R**2 = 0.8 with nBondsM
+   - nwHBa: R**2 = 0.97 with nBondsM
+   - nHaaCH: R**2 = 0.94 with nBondsM
+   - nHother: R**2 = 0.92 with nBondsM
+   - naaCH: R**2 = 0.94 with nBondsM
+   - SwHBa: R**2 = 0.92 with nBondsM
+   - SHaaCH: R**2 = 0.93 with nBondsM
+   - SHother: R**2 = 0.92 with nBondsM
+   - SaaCH: R**2 = 0.94 with nBondsM
+   - minHaaCH: R**2 = 0.73 with nBondsM
+   - minaaCH: R**2 = 0.77 with nBondsM
+   - maxHaaCH: R**2 = 0.7 with nBondsM
+   - maxaaCH: R**2 = 0.77 with nBondsM
+   - ETA_dEpsilon_B: R**2 = 0.74 with nBondsM
+   - ETA_Beta: R**2 = 0.9 with nBondsM
+   - ETA_BetaP: R**2 = 0.78 with nBondsM
+   - ETA_Beta_ns: R**2 = 0.98 with nBondsM
+   - ETA_BetaP_ns: R**2 = 0.78 with nBondsM
+   - ETA_dBeta: R**2 = 0.74 with nBondsM
+   - ETA_dBetaP: R**2 = 0.74 with nBondsM
+   - ETA_Eta_F: R**2 = 0.85 with nBondsM
+   - ETA_EtaP_F: R**2 = 0.71 with nBondsM
+   - ETA_Eta_F_L: R**2 = 0.88 with nBondsM
+   - HybRatio: R**2 = 0.75 with nBondsM
+   - nAtomP: R**2 = 0.89 with nBondsM
+   - nBondsM: R**2 = 0.91 with MLFER_E
+   - SpMin3_Bhm: R**2 = 0.74 with SpMax3_Bhm
+   - SpMax3_Bhm: R**2 = 0.98 with SpMax3_Bhv
+   - SpMax4_Bhm: R**2 = 0.78 with SpMax5_Bhm
+   - SpMin4_Bhm: R**2 = 0.78 with SpMax5_Bhm
+   - SpMin5_Bhm: R**2 = 0.73 with SpMax5_Bhm
+   - SpMax5_Bhm: R**2 = 0.73 with SpMax2_Bhv
+   - SpMin1_Bhm: R**2 = 0.96 with SpMin1_Bhv
+   - SpMin2_Bhm: R**2 = 0.8 with SpMax2_Bhv
+   - SpMin5_Bhv: R**2 = 0.74 with SpMin6_Bhm
+   - SpMin6_Bhv: R**2 = 0.92 with SpMin6_Bhm
+   - SpMin5_Bhp: R**2 = 0.73 with SpMin6_Bhm
+   - SpMin6_Bhp: R**2 = 0.76 with SpMin6_Bhm
+   - SpMin7_Bhv: R**2 = 0.85 with SpMin7_Bhm
+   - SpMin8_Bhv: R**2 = 0.84 with SpMin8_Bhm
+   - SpMax4_Bhv: R**2 = 0.7 with SpMax2_Bhv
+   - SpMax5_Bhv: R**2 = 0.73 with SpMax2_Bhv
+   - SpMin2_Bhv: R**2 = 0.81 with SpMax2_Bhv
+   - SpMax2_Bhe: R**2 = 0.97 with SpMax2_Bhv
+   - SpMax5_Bhe: R**2 = 0.74 with SpMax2_Bhv
+   - SpMax6_Bhe: R**2 = 0.71 with SpMax2_Bhv
+   - SpMin2_Bhe: R**2 = 0.86 with SpMax2_Bhv
+   - SpMax2_Bhp: R**2 = 1.0 with SpMax2_Bhv
+   - SpMax5_Bhp: R**2 = 0.73 with SpMax2_Bhv
+   - SpMin2_Bhp: R**2 = 0.8 with SpMax2_Bhv
+   - SpMax2_Bhi: R**2 = 0.97 with SpMax2_Bhv
+   - SpMax5_Bhi: R**2 = 0.72 with SpMax2_Bhv
+   - SpMax6_Bhi: R**2 = 0.7 with SpMax2_Bhv
+   - SpMin2_Bhi: R**2 = 0.86 with SpMax2_Bhv
+   - SpMin2_Bhs: R**2 = 0.83 with SpMax2_Bhv
+   - SpMax2_Bhv: R**2 = 0.71 with CrippenMR
+   - SpMin3_Bhv: R**2 = 0.82 with SpMax3_Bhv
+   - SpMax3_Bhe: R**2 = 0.98 with SpMax3_Bhv
+   - SpMin3_Bhe: R**2 = 0.74 with SpMax3_Bhv
+   - SpMax3_Bhv: R**2 = 1.0 with SpMax3_Bhp
+   - SpMin1_Bhv: R**2 = 0.96 with SpMin1_Bhe
+   - SpMin4_Bhv: R**2 = 0.89 with SpMax4_Bhe
+   - SpMax4_Bhe: R**2 = 0.98 with SpMax4_Bhp
+   - SpMin1_Bhe: R**2 = 0.86 with SpMax1_Bhp
+   - SpMin4_Bhp: R**2 = 0.71 with SpMin4_Bhe
+   - SpMin4_Bhe: R**2 = 0.92 with SpMin4_Bhi
+   - SpMin5_Bhi: R**2 = 0.85 with SpMin5_Bhe
+   - SpMin5_Bhe: R**2 = 0.72 with SpMin5_Bhs
+   - SpMin6_Bhe: R**2 = 0.0 with the YSI values
+   - SpMin7_Bhe: R**2 = 0.92 with SpMin7_Bhi
+   - SpMin8_Bhe: R**2 = 0.94 with SpMin8_Bhi
+   - SpMin1_Bhp: R**2 = 0.72 with SpMax1_Bhp
+   - SpMax1_Bhp: R**2 = 0.97 with SpMax1_Bhi
+   - SpMin3_Bhp: R**2 = 0.81 with SpMax3_Bhp
+   - SpMax3_Bhi: R**2 = 0.96 with SpMax3_Bhp
+   - SpMin3_Bhs: R**2 = 0.79 with SpMax3_Bhp
+   - SpMax3_Bhp: R**2 = 0.79 with VAdjMat
+   - SpMax4_Bhi: R**2 = 0.97 with SpMax4_Bhp
+   - SpMax4_Bhs: R**2 = 0.79 with SpMax4_Bhp
+   - SpMax5_Bhs: R**2 = 0.76 with SpMax4_Bhp
+   - CIC0: R**2 = 0.73 with SpMax4_Bhp
+   - SpMax4_Bhp: R**2 = 0.77 with VAdjMat
+   - SpMin8_Bhp: R**2 = 0.74 with SpMin8_Bhs
+   - ASP-1: R**2 = 0.75 with SpMax1_Bhi
+   - ETA_Epsilon_3: R**2 = 0.83 with SpMax1_Bhi
+   - SpMax1_Bhi: R**2 = 0.71 with MPC3
+   - SpMin8_Bhi: R**2 = 0.78 with SpMax8_Bhi
+   - SpMax8_Bhs: R**2 = 0.88 with SpMax8_Bhi
+   - SpMax8_Bhi: R**2 = 0.82 with VP-0
+   - VP-0: R**2 = 0.71 with SpMin3_Bhi
+   - VP-1: R**2 = 0.71 with SpMin3_Bhi
+   - SpMin3_Bhi: R**2 = 0.73 with Sv
+   - SpMax1_Bhs: R**2 = 0.72 with ndO
+   - SpMax6_Bhs: R**2 = 0.78 with Sv
+   - SpMin4_Bhs: R**2 = 0.71 with Sv
+   - SpMin7_Bhs: R**2 = 0.0 with the YSI values
+   - ntsC: R**2 = 0.86 with C2SP1
+   - StsC: R**2 = 0.93 with C2SP1
+   - mintsC: R**2 = 0.79 with C2SP1
+   - maxtsC: R**2 = 0.8 with C2SP1
+   - C2SP3: R**2 = 0.87 with nssCH2
+   - SsssCH: R**2 = 0.75 with C3SP3
+   - C4SP3: R**2 = 0.8 with VC-4
+   - SCH-3: R**2 = 0.0 with the YSI values
+   - SCH-4: R**2 = 0.0 with the YSI values
+   - SCH-5: R**2 = 0.0 with the YSI values
+   - SCH-6: R**2 = 0.85 with SCH-7
+   - VCH-6: R**2 = 0.77 with SCH-7
+   - VCH-7: R**2 = 0.84 with SCH-7
+   - VCH-3: R**2 = 0.0 with the YSI values
+   - VCH-4: R**2 = 0.0 with the YSI values
+   - VCH-5: R**2 = 0.0 with the YSI values
+   - SC-4: R**2 = 0.71 with SC-3
+   - VC-3: R**2 = 0.91 with SC-3
+   - SC-3: R**2 = 0.79 with ETA_Eta_B
+   - VC-5: R**2 = 0.79 with SC-5
+   - SC-6: R**2 = 0.0 with the YSI values
+   - VC-4: R**2 = 0.8 with nssssC
+   - VC-6: R**2 = 0.0 with the YSI values
+   - SPC-4: R**2 = 0.76 with SPC-5
+   - SPC-5: R**2 = 0.89 with SPC-6
+   - VPC-6: R**2 = 0.74 with SPC-6
+   - SPC-6: R**2 = 0.76 with MPC3
+   - VPC-4: R**2 = 0.77 with VPC-5
+   - SP-3: R**2 = 0.91 with SP-4
+   - SP-4: R**2 = 0.93 with SP-5
+   - SP-6: R**2 = 0.93 with SP-5
+   - SP-7: R**2 = 0.85 with SP-5
+   - VP-5: R**2 = 0.72 with SP-5
+   - SpMax_Dt: R**2 = 0.88 with SP-5
+   - SpDiam_Dt: R**2 = 0.81 with SP-5
+   - SpAD_Dt: R**2 = 0.88 with SP-5
+   - SpMAD_Dt: R**2 = 0.92 with SP-5
+   - EE_Dt: R**2 = 0.88 with SP-5
+   - SP-5: R**2 = 0.79 with fragC
+   - ETA_Shape_P: R**2 = 0.91 with ASP-0
+   - ASP-0: R**2 = 0.71 with piPC4
+   - VP-2: R**2 = 0.78 with VP-3
+   - VP-3: R**2 = 0.9 with VP-4
+   - VP-6: R**2 = 0.87 with VP-4
+   - VP-7: R**2 = 0.73 with VP-4
+   - VP-4: R**2 = 0.72 with LipoaffinityIndex
+   - AVP-2: R**2 = 0.73 with AVP-0
+   - AVP-0: R**2 = 0.72 with ETA_EtaP_F_L
+   - AVP-7: R**2 = 0.0 with the YSI values
+   - Sse: R**2 = 0.92 with Sv
+   - Spe: R**2 = 0.93 with Sv
+   - Sare: R**2 = 0.93 with Sv
+   - Sp: R**2 = 0.99 with Sv
+   - Si: R**2 = 0.9 with Sv
+   - Sv: R**2 = 0.74 with CrippenLogP
+   - ETA_Epsilon_1: R**2 = 0.99 with Mpe
+   - Mpe: R**2 = 0.8 with ETA_Epsilon_4
+   - CrippenLogP: R**2 = 0.77 with CrippenMR
+   - ECCEN: R**2 = 0.85 with CrippenMR
+   - LipoaffinityIndex: R**2 = 0.83 with CrippenMR
+   - CrippenMR: R**2 = 0.98 with ETA_Alpha
+   - VE1_Dt: R**2 = 0.0 with the YSI values
+   - VE3_Dt: R**2 = 0.83 with VE3_D
+   - VR1_Dt: R**2 = 0.86 with VR2_Dt
+   - minHBd: R**2 = 0.9 with nHBd
+   - maxHBd: R**2 = 0.91 with nHBd
+   - nHBd: R**2 = 0.73 with ETA_dEpsilon_D
+   - nwHBd: error in R**2 with the YSI values (are all the values the same?)
+   - nHBint2: R**2 = 0.96 with SHBint2
+   - SHBint3: R**2 = 0.92 with nHBint3
+   - nHBint3: R**2 = 0.93 with minHBint3
+   - SHBint4: R**2 = 0.91 with nHBint4
+   - nHBint4: R**2 = 0.93 with minHBint4
+   - nHBint5: R**2 = 0.0 with the YSI values
+   - SHBint6: R**2 = 0.96 with nHBint6
+   - nHBint6: R**2 = 0.99 with minHBint6
+   - nHBint7: error in R**2 with the YSI values (are all the values the same?)
+   - nHBint8: error in R**2 with the YSI values (are all the values the same?)
+   - nHBint9: R**2 = 0.0 with the YSI values
+   - nHBint10: error in R**2 with the YSI values (are all the values the same?)
+   - nHdNH: R**2 = 0.0 with the YSI values
+   - nHsSH: error in R**2 with the YSI values (are all the values the same?)
+   - nsNH2: R**2 = 1.0 with nHsNH2
+   - nHsNH2: R**2 = 0.98 with SHsNH2
+   - nssNH: R**2 = 1.0 with nHssNH
+   - SHssNH: R**2 = 0.95 with nHssNH
+   - SssNH: R**2 = 0.99 with nHssNH
+   - minHssNH: R**2 = 0.95 with nHssNH
+   - minssNH: R**2 = 0.99 with nHssNH
+   - maxHssNH: R**2 = 0.95 with nHssNH
+   - maxssNH: R**2 = 0.99 with nHssNH
+   - nHaaNH: R**2 = 0.0 with the YSI values
+   - nHsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - nHssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - nHsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - ntCH: R**2 = 1.0 with nHtCH
+   - SHtCH: R**2 = 1.0 with nHtCH
+   - nHtCH: R**2 = 1.0 with StCH
+   - ndCH2: R**2 = 1.0 with nHdCH2
+   - nHdCH2: R**2 = 0.98 with SHdCH2
+   - ndsCH: R**2 = 1.0 with nHdsCH
+   - nHdsCH: R**2 = 0.89 with SHdsCH
+   - nHCHnX: error in R**2 with the YSI values (are all the values the same?)
+   - nssCH2: R**2 = 0.71 with nHCsats
+   - nHCsats: R**2 = 0.81 with SHCsats
+   - nHCsatu: R**2 = 0.93 with SHCsatu
+   - SHAvin: R**2 = 0.95 with nHAvin
+   - minHAvin: R**2 = 0.85 with nHAvin
+   - maxHAvin: R**2 = 0.85 with nHAvin
+   - nHmisc: error in R**2 with the YSI values (are all the values the same?)
+   - nsLi: error in R**2 with the YSI values (are all the values the same?)
+   - nssBe: error in R**2 with the YSI values (are all the values the same?)
+   - nssssBem: error in R**2 with the YSI values (are all the values the same?)
+   - nsBH2: error in R**2 with the YSI values (are all the values the same?)
+   - nssBH: error in R**2 with the YSI values (are all the values the same?)
+   - nsssB: error in R**2 with the YSI values (are all the values the same?)
+   - nssssBm: error in R**2 with the YSI values (are all the values the same?)
+   - SsCH3: R**2 = 0.97 with nsCH3
+   - ETA_Eta_B: R**2 = 0.73 with nsCH3
+   - nddC: error in R**2 with the YSI values (are all the values the same?)
+   - naasC: R**2 = 0.92 with SaasC
+   - naaaC: R**2 = 1.0 with SaaaC
+   - nssssC: R**2 = 0.91 with ETA_Shape_X
+   - nsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - nssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - ndNH: R**2 = 0.0 with the YSI values
+   - naaNH: R**2 = 0.0 with the YSI values
+   - StN: R**2 = 1.0 with ntN
+   - mintN: R**2 = 1.0 with ntN
+   - maxtN: R**2 = 1.0 with ntN
+   - nsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - SdsN: R**2 = 0.9 with ndsN
+   - mindsN: R**2 = 0.9 with ndsN
+   - maxdsN: R**2 = 0.9 with ndsN
+   - naaN: R**2 = 0.0 with the YSI values
+   - SsssN: R**2 = 0.97 with nsssN
+   - minsssN: R**2 = 0.97 with nsssN
+   - maxsssN: R**2 = 0.97 with nsssN
+   - nddsN: error in R**2 with the YSI values (are all the values the same?)
+   - naasN: R**2 = 0.0 with the YSI values
+   - nssssNp: error in R**2 with the YSI values (are all the values the same?)
+   - SdO: R**2 = 1.0 with ndO
+   - mindO: R**2 = 1.0 with ndO
+   - maxdO: R**2 = 1.0 with ndO
+   - SssO: R**2 = 0.99 with nssO
+   - nssO: R**2 = 0.77 with WTPT-4
+   - SaaO: R**2 = 1.0 with naaO
+   - minaaO: R**2 = 1.0 with naaO
+   - maxaaO: R**2 = 1.0 with naaO
+   - naOm: error in R**2 with the YSI values (are all the values the same?)
+   - nsOm: R**2 = 0.0 with the YSI values
+   - nsF: R**2 = 0.0 with the YSI values
+   - nsSiH3: error in R**2 with the YSI values (are all the values the same?)
+   - nssSiH2: error in R**2 with the YSI values (are all the values the same?)
+   - nsssSiH: error in R**2 with the YSI values (are all the values the same?)
+   - nssssSi: error in R**2 with the YSI values (are all the values the same?)
+   - nsPH2: error in R**2 with the YSI values (are all the values the same?)
+   - nssPH: error in R**2 with the YSI values (are all the values the same?)
+   - nsssP: error in R**2 with the YSI values (are all the values the same?)
+   - ndsssP: error in R**2 with the YSI values (are all the values the same?)
+   - nddsP: error in R**2 with the YSI values (are all the values the same?)
+   - nsssssP: error in R**2 with the YSI values (are all the values the same?)
+   - nsSH: error in R**2 with the YSI values (are all the values the same?)
+   - ndS: error in R**2 with the YSI values (are all the values the same?)
+   - nssS: error in R**2 with the YSI values (are all the values the same?)
+   - naaS: error in R**2 with the YSI values (are all the values the same?)
+   - ndssS: error in R**2 with the YSI values (are all the values the same?)
+   - nddssS: error in R**2 with the YSI values (are all the values the same?)
+   - nssssssS: error in R**2 with the YSI values (are all the values the same?)
+   - nSm: error in R**2 with the YSI values (are all the values the same?)
+   - nsCl: R**2 = 0.0 with the YSI values
+   - nsGeH3: error in R**2 with the YSI values (are all the values the same?)
+   - nssGeH2: error in R**2 with the YSI values (are all the values the same?)
+   - nsssGeH: error in R**2 with the YSI values (are all the values the same?)
+   - nssssGe: error in R**2 with the YSI values (are all the values the same?)
+   - nsAsH2: error in R**2 with the YSI values (are all the values the same?)
+   - nssAsH: error in R**2 with the YSI values (are all the values the same?)
+   - nsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - ndsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - nddsAs: error in R**2 with the YSI values (are all the values the same?)
+   - nsssssAs: error in R**2 with the YSI values (are all the values the same?)
+   - nsSeH: error in R**2 with the YSI values (are all the values the same?)
+   - ndSe: error in R**2 with the YSI values (are all the values the same?)
+   - nssSe: error in R**2 with the YSI values (are all the values the same?)
+   - naaSe: error in R**2 with the YSI values (are all the values the same?)
+   - ndssSe: error in R**2 with the YSI values (are all the values the same?)
+   - nssssssSe: error in R**2 with the YSI values (are all the values the same?)
+   - nddssSe: error in R**2 with the YSI values (are all the values the same?)
+   - nsSnH3: error in R**2 with the YSI values (are all the values the same?)
+   - nssSnH2: error in R**2 with the YSI values (are all the values the same?)
+   - nsssSnH: error in R**2 with the YSI values (are all the values the same?)
+   - nssssSn: error in R**2 with the YSI values (are all the values the same?)
+   - nsI: error in R**2 with the YSI values (are all the values the same?)
+   - nsPbH3: error in R**2 with the YSI values (are all the values the same?)
+   - nssPbH2: error in R**2 with the YSI values (are all the values the same?)
+   - nsssPbH: error in R**2 with the YSI values (are all the values the same?)
+   - nssssPb: error in R**2 with the YSI values (are all the values the same?)
+   - SwHBd: error in R**2 with the YSI values (are all the values the same?)
+   - minHBint2: R**2 = 1.0 with SHBint2
+   - maxHBint2: R**2 = 1.0 with SHBint2
+   - SHBint5: R**2 = 0.0 with the YSI values
+   - SHBint7: error in R**2 with the YSI values (are all the values the same?)
+   - SHBint8: error in R**2 with the YSI values (are all the values the same?)
+   - SHBint9: R**2 = 0.0 with the YSI values
+   - SHBint10: error in R**2 with the YSI values (are all the values the same?)
+   - SHdNH: R**2 = 0.0 with the YSI values
+   - SHsSH: error in R**2 with the YSI values (are all the values the same?)
+   - SsNH2: R**2 = 0.95 with SHsNH2
+   - minHsNH2: R**2 = 1.0 with SHsNH2
+   - minsNH2: R**2 = 0.95 with SHsNH2
+   - maxHsNH2: R**2 = 1.0 with SHsNH2
+   - maxsNH2: R**2 = 0.95 with SHsNH2
+   - SHaaNH: R**2 = 0.0 with the YSI values
+   - SHsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - SHssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - SHsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - SdCH2: R**2 = 0.97 with SHdCH2
+   - SHdCH2: R**2 = 0.95 with minHdCH2
+   - SHdsCH: R**2 = 0.78 with minHdsCH
+   - SHCHnX: error in R**2 with the YSI values (are all the values the same?)
+   - SHmisc: error in R**2 with the YSI values (are all the values the same?)
+   - SsLi: error in R**2 with the YSI values (are all the values the same?)
+   - SssBe: error in R**2 with the YSI values (are all the values the same?)
+   - SssssBem: error in R**2 with the YSI values (are all the values the same?)
+   - SsBH2: error in R**2 with the YSI values (are all the values the same?)
+   - SssBH: error in R**2 with the YSI values (are all the values the same?)
+   - SsssB: error in R**2 with the YSI values (are all the values the same?)
+   - SssssBm: error in R**2 with the YSI values (are all the values the same?)
+   - ETA_Eta_L: R**2 = 0.7 with SssCH2
+   - minHtCH: R**2 = 1.0 with StCH
+   - mintCH: R**2 = 1.0 with StCH
+   - maxHtCH: R**2 = 1.0 with StCH
+   - maxtCH: R**2 = 1.0 with StCH
+   - SdsCH: R**2 = 0.0 with the YSI values
+   - SddC: error in R**2 with the YSI values (are all the values the same?)
+   - SdssC: R**2 = 0.0 with the YSI values
+   - maxaasC: R**2 = 0.72 with SaasC
+   - minaaaC: R**2 = 0.81 with SaaaC
+   - maxaaaC: R**2 = 0.82 with SaaaC
+   - SssssC: R**2 = 0.94 with minssssC
+   - SsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - SssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - SdNH: R**2 = 0.0 with the YSI values
+   - SaaNH: R**2 = 0.0 with the YSI values
+   - SsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - SaaN: R**2 = 0.0 with the YSI values
+   - SddsN: error in R**2 with the YSI values (are all the values the same?)
+   - SaasN: R**2 = 0.0 with the YSI values
+   - SssssNp: error in R**2 with the YSI values (are all the values the same?)
+   - SaOm: error in R**2 with the YSI values (are all the values the same?)
+   - SsOm: R**2 = 0.0 with the YSI values
+   - SsF: R**2 = 0.0 with the YSI values
+   - SsSiH3: error in R**2 with the YSI values (are all the values the same?)
+   - SssSiH2: error in R**2 with the YSI values (are all the values the same?)
+   - SsssSiH: error in R**2 with the YSI values (are all the values the same?)
+   - SssssSi: error in R**2 with the YSI values (are all the values the same?)
+   - SsPH2: error in R**2 with the YSI values (are all the values the same?)
+   - SssPH: error in R**2 with the YSI values (are all the values the same?)
+   - SsssP: error in R**2 with the YSI values (are all the values the same?)
+   - SdsssP: error in R**2 with the YSI values (are all the values the same?)
+   - SddsP: error in R**2 with the YSI values (are all the values the same?)
+   - SsssssP: error in R**2 with the YSI values (are all the values the same?)
+   - SsSH: error in R**2 with the YSI values (are all the values the same?)
+   - SdS: error in R**2 with the YSI values (are all the values the same?)
+   - SssS: error in R**2 with the YSI values (are all the values the same?)
+   - SaaS: error in R**2 with the YSI values (are all the values the same?)
+   - SdssS: error in R**2 with the YSI values (are all the values the same?)
+   - SddssS: error in R**2 with the YSI values (are all the values the same?)
+   - SssssssS: error in R**2 with the YSI values (are all the values the same?)
+   - SSm: error in R**2 with the YSI values (are all the values the same?)
+   - SsCl: R**2 = 0.0 with the YSI values
+   - SsGeH3: error in R**2 with the YSI values (are all the values the same?)
+   - SssGeH2: error in R**2 with the YSI values (are all the values the same?)
+   - SsssGeH: error in R**2 with the YSI values (are all the values the same?)
+   - SssssGe: error in R**2 with the YSI values (are all the values the same?)
+   - SsAsH2: error in R**2 with the YSI values (are all the values the same?)
+   - SssAsH: error in R**2 with the YSI values (are all the values the same?)
+   - SsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - SdsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - SddsAs: error in R**2 with the YSI values (are all the values the same?)
+   - SsssssAs: error in R**2 with the YSI values (are all the values the same?)
+   - SsSeH: error in R**2 with the YSI values (are all the values the same?)
+   - SdSe: error in R**2 with the YSI values (are all the values the same?)
+   - SssSe: error in R**2 with the YSI values (are all the values the same?)
+   - SaaSe: error in R**2 with the YSI values (are all the values the same?)
+   - SdssSe: error in R**2 with the YSI values (are all the values the same?)
+   - SssssssSe: error in R**2 with the YSI values (are all the values the same?)
+   - SddssSe: error in R**2 with the YSI values (are all the values the same?)
+   - SsSnH3: error in R**2 with the YSI values (are all the values the same?)
+   - SssSnH2: error in R**2 with the YSI values (are all the values the same?)
+   - SsssSnH: error in R**2 with the YSI values (are all the values the same?)
+   - SssssSn: error in R**2 with the YSI values (are all the values the same?)
+   - SsI: error in R**2 with the YSI values (are all the values the same?)
+   - SsPbH3: error in R**2 with the YSI values (are all the values the same?)
+   - SssPbH2: error in R**2 with the YSI values (are all the values the same?)
+   - SsssPbH: error in R**2 with the YSI values (are all the values the same?)
+   - SssssPb: error in R**2 with the YSI values (are all the values the same?)
+   - minwHBd: error in R**2 with the YSI values (are all the values the same?)
+   - minHBa: R**2 = 0.75 with maxHBa
+   - maxHBint3: R**2 = 0.96 with minHBint3
+   - maxHBint4: R**2 = 1.0 with minHBint4
+   - minHBint5: R**2 = 0.0 with the YSI values
+   - maxHBint6: R**2 = 1.0 with minHBint6
+   - minHBint7: error in R**2 with the YSI values (are all the values the same?)
+   - minHBint8: error in R**2 with the YSI values (are all the values the same?)
+   - minHBint9: R**2 = 0.0 with the YSI values
+   - minHBint10: error in R**2 with the YSI values (are all the values the same?)
+   - minHdNH: R**2 = 0.0 with the YSI values
+   - minHsSH: error in R**2 with the YSI values (are all the values the same?)
+   - minHaaNH: R**2 = 0.0 with the YSI values
+   - minHsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - minHssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - minHsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - mindCH2: R**2 = 0.96 with minHdCH2
+   - minHdCH2: R**2 = 1.0 with maxHdCH2
+   - minHdsCH: R**2 = 0.99 with maxHdsCH
+   - minHCHnX: error in R**2 with the YSI values (are all the values the same?)
+   - minHCsats: R**2 = 0.78 with maxHCsats
+   - maxHCsatu: R**2 = 0.98 with minHCsatu
+   - maxHother: R**2 = 0.98 with minHother
+   - minHmisc: error in R**2 with the YSI values (are all the values the same?)
+   - minsLi: error in R**2 with the YSI values (are all the values the same?)
+   - minssBe: error in R**2 with the YSI values (are all the values the same?)
+   - minssssBem: error in R**2 with the YSI values (are all the values the same?)
+   - minsBH2: error in R**2 with the YSI values (are all the values the same?)
+   - minssBH: error in R**2 with the YSI values (are all the values the same?)
+   - minsssB: error in R**2 with the YSI values (are all the values the same?)
+   - minssssBm: error in R**2 with the YSI values (are all the values the same?)
+   - minsCH3: R**2 = 0.96 with maxsCH3
+   - minssCH2: R**2 = 0.83 with maxssCH2
+   - mindsCH: R**2 = 0.0 with the YSI values
+   - minsssCH: R**2 = 0.84 with maxsssCH
+   - minddC: error in R**2 with the YSI values (are all the values the same?)
+   - maxdssC: R**2 = 0.85 with mindssC
+   - minsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - minssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - mindNH: R**2 = 0.0 with the YSI values
+   - minaaNH: R**2 = 0.0 with the YSI values
+   - minsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - minaaN: R**2 = 0.0 with the YSI values
+   - minddsN: error in R**2 with the YSI values (are all the values the same?)
+   - minaasN: R**2 = 0.0 with the YSI values
+   - minssssNp: error in R**2 with the YSI values (are all the values the same?)
+   - minssO: R**2 = 1.0 with maxssO
+   - minaOm: error in R**2 with the YSI values (are all the values the same?)
+   - minsOm: R**2 = 0.0 with the YSI values
+   - minsF: R**2 = 0.0 with the YSI values
+   - minsSiH3: error in R**2 with the YSI values (are all the values the same?)
+   - minssSiH2: error in R**2 with the YSI values (are all the values the same?)
+   - minsssSiH: error in R**2 with the YSI values (are all the values the same?)
+   - minssssSi: error in R**2 with the YSI values (are all the values the same?)
+   - minsPH2: error in R**2 with the YSI values (are all the values the same?)
+   - minssPH: error in R**2 with the YSI values (are all the values the same?)
+   - minsssP: error in R**2 with the YSI values (are all the values the same?)
+   - mindsssP: error in R**2 with the YSI values (are all the values the same?)
+   - minddsP: error in R**2 with the YSI values (are all the values the same?)
+   - minsssssP: error in R**2 with the YSI values (are all the values the same?)
+   - minsSH: error in R**2 with the YSI values (are all the values the same?)
+   - mindS: error in R**2 with the YSI values (are all the values the same?)
+   - minssS: error in R**2 with the YSI values (are all the values the same?)
+   - minaaS: error in R**2 with the YSI values (are all the values the same?)
+   - mindssS: error in R**2 with the YSI values (are all the values the same?)
+   - minddssS: error in R**2 with the YSI values (are all the values the same?)
+   - minssssssS: error in R**2 with the YSI values (are all the values the same?)
+   - minSm: error in R**2 with the YSI values (are all the values the same?)
+   - minsCl: R**2 = 0.0 with the YSI values
+   - minsGeH3: error in R**2 with the YSI values (are all the values the same?)
+   - minssGeH2: error in R**2 with the YSI values (are all the values the same?)
+   - minsssGeH: error in R**2 with the YSI values (are all the values the same?)
+   - minssssGe: error in R**2 with the YSI values (are all the values the same?)
+   - minsAsH2: error in R**2 with the YSI values (are all the values the same?)
+   - minssAsH: error in R**2 with the YSI values (are all the values the same?)
+   - minsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - mindsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - minddsAs: error in R**2 with the YSI values (are all the values the same?)
+   - minsssssAs: error in R**2 with the YSI values (are all the values the same?)
+   - minsSeH: error in R**2 with the YSI values (are all the values the same?)
+   - mindSe: error in R**2 with the YSI values (are all the values the same?)
+   - minssSe: error in R**2 with the YSI values (are all the values the same?)
+   - minaaSe: error in R**2 with the YSI values (are all the values the same?)
+   - mindssSe: error in R**2 with the YSI values (are all the values the same?)
+   - minssssssSe: error in R**2 with the YSI values (are all the values the same?)
+   - minddssSe: error in R**2 with the YSI values (are all the values the same?)
+   - minsSnH3: error in R**2 with the YSI values (are all the values the same?)
+   - minssSnH2: error in R**2 with the YSI values (are all the values the same?)
+   - minsssSnH: error in R**2 with the YSI values (are all the values the same?)
+   - minssssSn: error in R**2 with the YSI values (are all the values the same?)
+   - minsI: error in R**2 with the YSI values (are all the values the same?)
+   - minsPbH3: error in R**2 with the YSI values (are all the values the same?)
+   - minssPbH2: error in R**2 with the YSI values (are all the values the same?)
+   - minsssPbH: error in R**2 with the YSI values (are all the values the same?)
+   - minssssPb: error in R**2 with the YSI values (are all the values the same?)
+   - maxwHBd: error in R**2 with the YSI values (are all the values the same?)
+   - gmax: R**2 = 0.93 with maxHBa
+   - MAXDN: R**2 = 0.75 with maxHBa
+   - MAXDP: R**2 = 0.92 with maxHBa
+   - MAXDN2: R**2 = 0.75 with maxHBa
+   - MAXDP2: R**2 = 0.92 with maxHBa
+   - maxHBint5: R**2 = 0.0 with the YSI values
+   - maxHBint7: error in R**2 with the YSI values (are all the values the same?)
+   - maxHBint8: error in R**2 with the YSI values (are all the values the same?)
+   - maxHBint9: R**2 = 0.0 with the YSI values
+   - maxHBint10: error in R**2 with the YSI values (are all the values the same?)
+   - maxHdNH: R**2 = 0.0 with the YSI values
+   - maxHsSH: error in R**2 with the YSI values (are all the values the same?)
+   - maxHaaNH: R**2 = 0.0 with the YSI values
+   - maxHsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - maxHssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - maxHsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - maxdCH2: R**2 = 0.96 with maxHdCH2
+   - maxHCHnX: error in R**2 with the YSI values (are all the values the same?)
+   - maxHmisc: error in R**2 with the YSI values (are all the values the same?)
+   - maxsLi: error in R**2 with the YSI values (are all the values the same?)
+   - maxssBe: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssBem: error in R**2 with the YSI values (are all the values the same?)
+   - maxsBH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxssBH: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssB: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssBm: error in R**2 with the YSI values (are all the values the same?)
+   - maxddC: error in R**2 with the YSI values (are all the values the same?)
+   - maxsNH3p: error in R**2 with the YSI values (are all the values the same?)
+   - maxssNH2p: error in R**2 with the YSI values (are all the values the same?)
+   - maxdNH: R**2 = 0.0 with the YSI values
+   - maxaaNH: R**2 = 0.0 with the YSI values
+   - maxsssNHp: error in R**2 with the YSI values (are all the values the same?)
+   - maxaaN: R**2 = 0.0 with the YSI values
+   - maxddsN: error in R**2 with the YSI values (are all the values the same?)
+   - maxaasN: R**2 = 0.0 with the YSI values
+   - maxssssNp: error in R**2 with the YSI values (are all the values the same?)
+   - maxaOm: error in R**2 with the YSI values (are all the values the same?)
+   - maxsOm: R**2 = 0.0 with the YSI values
+   - maxsF: R**2 = 0.0 with the YSI values
+   - maxsSiH3: error in R**2 with the YSI values (are all the values the same?)
+   - maxssSiH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssSiH: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssSi: error in R**2 with the YSI values (are all the values the same?)
+   - maxsPH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxssPH: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssP: error in R**2 with the YSI values (are all the values the same?)
+   - maxdsssP: error in R**2 with the YSI values (are all the values the same?)
+   - maxddsP: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssssP: error in R**2 with the YSI values (are all the values the same?)
+   - maxsSH: error in R**2 with the YSI values (are all the values the same?)
+   - maxdS: error in R**2 with the YSI values (are all the values the same?)
+   - maxssS: error in R**2 with the YSI values (are all the values the same?)
+   - maxaaS: error in R**2 with the YSI values (are all the values the same?)
+   - maxdssS: error in R**2 with the YSI values (are all the values the same?)
+   - maxddssS: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssssS: error in R**2 with the YSI values (are all the values the same?)
+   - maxSm: error in R**2 with the YSI values (are all the values the same?)
+   - maxsCl: R**2 = 0.0 with the YSI values
+   - maxsGeH3: error in R**2 with the YSI values (are all the values the same?)
+   - maxssGeH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssGeH: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssGe: error in R**2 with the YSI values (are all the values the same?)
+   - maxsAsH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxssAsH: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - maxdsssAs: error in R**2 with the YSI values (are all the values the same?)
+   - maxddsAs: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssssAs: error in R**2 with the YSI values (are all the values the same?)
+   - maxsSeH: error in R**2 with the YSI values (are all the values the same?)
+   - maxdSe: error in R**2 with the YSI values (are all the values the same?)
+   - maxssSe: error in R**2 with the YSI values (are all the values the same?)
+   - maxaaSe: error in R**2 with the YSI values (are all the values the same?)
+   - maxdssSe: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssssSe: error in R**2 with the YSI values (are all the values the same?)
+   - maxddssSe: error in R**2 with the YSI values (are all the values the same?)
+   - maxsSnH3: error in R**2 with the YSI values (are all the values the same?)
+   - maxssSnH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssSnH: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssSn: error in R**2 with the YSI values (are all the values the same?)
+   - maxsI: error in R**2 with the YSI values (are all the values the same?)
+   - maxsPbH3: error in R**2 with the YSI values (are all the values the same?)
+   - maxssPbH2: error in R**2 with the YSI values (are all the values the same?)
+   - maxsssPbH: error in R**2 with the YSI values (are all the values the same?)
+   - maxssssPb: error in R**2 with the YSI values (are all the values the same?)
+   - sumI: R**2 = 0.78 with ETA_Beta_s
+   - DELS: R**2 = 1.0 with DELS2
+   - DELS2: R**2 = 0.74 with nHBAcc2
+   - ETA_Beta_s: R**2 = 0.9 with ETA_Alpha
+   - ETA_Eta_R: R**2 = 0.96 with ETA_Alpha
+   - ETA_Eta_R_L: R**2 = 0.98 with ETA_Alpha
+   - TIC4: R**2 = 0.74 with ETA_Alpha
+   - TIC5: R**2 = 0.77 with ETA_Alpha
+   - ZMIC0: R**2 = 0.96 with ETA_Alpha
+   - ETA_Alpha: R**2 = 0.89 with ZMIC1
+   - ETA_AlphaP: R**2 = 0.95 with ETA_dAlpha_B
+   - ETA_Epsilon_2: R**2 = 1.0 with ETA_dAlpha_B
+   - ETA_Epsilon_4: R**2 = 0.93 with ETA_dAlpha_B
+   - ETA_Epsilon_5: R**2 = 0.82 with ETA_dAlpha_B
+   - ETA_dEpsilon_C: R**2 = 0.96 with ETA_dAlpha_B
+   - ETA_dAlpha_B: R**2 = 0.98 with ETA_Psi_1
+   - ETA_dEpsilon_A: R**2 = 0.82 with IC0
+   - ETA_dEpsilon_D: R**2 = 0.78 with nHBDon
+   - ETA_Psi_1: R**2 = 1.0 with ETA_dPsi_A
+   - nHBAcc2: R**2 = 0.82 with ETA_dPsi_A
+   - nHBAcc3: R**2 = 0.8 with ETA_dPsi_A
+   - nHBAcc_Lipinski: R**2 = 0.81 with ETA_dPsi_A
+   - IC0: R**2 = 0.81 with ETA_dPsi_A
+   - ETA_dPsi_A: R**2 = 0.8 with MIC0
+   - MDEC-14: R**2 = 0.87 with ETA_Shape_X
+   - ETA_Beta_ns_d: R**2 = 0.98 with ETA_BetaP_ns_d
+   - ETA_Eta: R**2 = 0.71 with TIC2
+   - ETA_EtaP: R**2 = 0.73 with ETA_EtaP_L
+   - ETA_EtaP_L: R**2 = 0.97 with ETA_EtaP_F_L
+   - AMW: R**2 = 0.78 with ETA_EtaP_F_L
+   - ETA_EtaP_B_RC: R**2 = 0.87 with ETA_EtaP_B
+   - ETA_EtaP_B: R**2 = 0.93 with JGI1
+   - GGI1: R**2 = 0.91 with ETA_Eta_B_RC
+   - FMF: R**2 = 0.7 with MLFER_E
+   - fragC: R**2 = 0.77 with MDEC-23
+   - nHBAcc: R**2 = 0.8 with WTPT-3
+   - nHBDon_Lipinski: R**2 = 0.92 with nHBDon
+   - SIC1: R**2 = 0.82 with IC1
+   - BIC1: R**2 = 0.78 with IC1
+   - IC2: R**2 = 0.77 with IC3
+   - IC3: R**2 = 0.88 with IC4
+   - IC4: R**2 = 0.87 with IC5
+   - SIC5: R**2 = 0.91 with IC5
+   - CIC5: R**2 = 0.75 with IC5
+   - BIC5: R**2 = 0.92 with IC5
+   - IC5: R**2 = 0.77 with MIC4
+   - TIC2: R**2 = 0.84 with TIC1
+   - TIC3: R**2 = 0.77 with TIC1
+   - VABC: R**2 = 0.7 with TIC1
+   - TIC1: R**2 = 0.71 with MW
+   - SIC0: R**2 = 0.98 with BIC0
+   - SIC3: R**2 = 0.77 with SIC2
+   - SIC2: R**2 = 0.93 with CIC2
+   - CIC4: R**2 = 0.89 with SIC4
+   - BIC3: R**2 = 0.7 with SIC4
+   - BIC4: R**2 = 0.98 with SIC4
+   - SIC4: R**2 = 0.74 with MIC4
+   - CIC1: R**2 = 0.77 with CIC2
+   - CIC3: R**2 = 0.82 with CIC2
+   - CIC2: R**2 = 0.9 with BIC2
+   - BIC0: R**2 = 0.71 with MIC0
+   - TopoPSA: R**2 = 0.71 with MIC0
+   - MIC1: R**2 = 0.79 with MIC2
+   - MIC2: R**2 = 0.86 with MIC3
+   - MIC3: R**2 = 0.84 with MIC4
+   - MIC4: R**2 = 0.83 with MIC5
+   - ZMIC2: R**2 = 0.94 with ZMIC1
+   - ZMIC3: R**2 = 0.83 with ZMIC1
+   - ZMIC4: R**2 = 0.76 with ZMIC1
+   - ZMIC5: R**2 = 0.73 with ZMIC1
+   - ZMIC1: R**2 = 0.74 with MLogP
+   - Kier2: R**2 = 0.72 with Kier1
+   - Kier1: R**2 = 0.91 with McGowan_Volume
+   - Kier3: R**2 = 0.78 with nAtomLC
+   - nRotB: R**2 = 0.77 with nAtomLC
+   - RotBFrac: R**2 = 0.77 with nAtomLC
+   - nRotBt: R**2 = 0.87 with nAtomLC
+   - McGowan_Volume: R**2 = 0.7 with MLogP
+   - MLFER_L: R**2 = 0.77 with MLogP
+   - MLogP: R**2 = 0.72 with MPC2
+   - MDEC-23: R**2 = 0.75 with MLFER_E
+   - MDEC-34: R**2 = 0.0 with the YSI values
+   - MDEC-44: R**2 = 0.0 with the YSI values
+   - MDEN-11: error in R**2 with the YSI values (are all the values the same?)
+   - MDEN-12: error in R**2 with the YSI values (are all the values the same?)
+   - MDEN-13: error in R**2 with the YSI values (are all the values the same?)
+   - MDEN-22: R**2 = 0.0 with the YSI values
+   - MDEN-23: R**2 = 0.0 with the YSI values
+   - MDEN-33: error in R**2 with the YSI values (are all the values the same?)
+   - MLFER_BO: R**2 = 1.0 with MLFER_BH
+   - MPC5: R**2 = 0.73 with MLFER_E
+   - TpiPC: R**2 = 0.81 with MLFER_E
+   - MLFER_E: R**2 = 0.85 with R_TpiPCTPC
+   - MPC2: R**2 = 0.93 with MPC3
+   - MPC3: R**2 = 0.96 with MPC4
+   - MPC4: R**2 = 0.9 with MPC6
+   - MPC7: R**2 = 0.95 with MPC6
+   - MPC8: R**2 = 0.87 with MPC6
+   - MPC9: R**2 = 0.79 with MPC6
+   - MPC6: R**2 = 0.97 with TPC
+   - MPC10: R**2 = 0.78 with TPC
+   - piPC8: R**2 = 0.7 with TPC
+   - piPC9: R**2 = 0.73 with TPC
+   - piPC10: R**2 = 0.74 with TPC
+   - nTRing: R**2 = 0.78 with TPC
+   - WPOL: R**2 = 0.75 with TPC
+   - Zagreb: R**2 = 0.72 with TPC
+   - piPC1: R**2 = 0.92 with piPC2
+   - piPC3: R**2 = 0.94 with piPC2
+   - piPC4: R**2 = 0.86 with piPC2
+   - piPC5: R**2 = 0.81 with piPC2
+   - piPC2: R**2 = 0.82 with piPC6
+   - piPC6: R**2 = 0.87 with piPC7
+   - n6Ring: R**2 = 0.71 with R_TpiPCTPC
+   - topoShape: R**2 = 0.94 with PetitjeanNumber
+   - nRing: R**2 = 0.78 with nT6Ring
+   - n3Ring: R**2 = 0.0 with the YSI values
+   - nT4Ring: R**2 = 1.0 with n4Ring
+   - n4Ring: R**2 = 0.75 with n4HeteroRing
+   - nT5Ring: R**2 = 1.0 with n5Ring
+   - n5Ring: R**2 = 0.74 with SRW5
+   - nT7Ring: R**2 = 0.75 with n7Ring
+   - n8Ring: R**2 = 0.0 with the YSI values
+   - n9Ring: error in R**2 with the YSI values (are all the values the same?)
+   - n10Ring: error in R**2 with the YSI values (are all the values the same?)
+   - n11Ring: error in R**2 with the YSI values (are all the values the same?)
+   - n12Ring: error in R**2 with the YSI values (are all the values the same?)
+   - nG12Ring: error in R**2 with the YSI values (are all the values the same?)
+   - nFG12Ring: R**2 = 0.78 with nFRing
+   - nTG12Ring: R**2 = 0.78 with nFRing
+   - nF4Ring: error in R**2 with the YSI values (are all the values the same?)
+   - nF5Ring: error in R**2 with the YSI values (are all the values the same?)
+   - nF6Ring: R**2 = 0.0 with the YSI values
+   - nF7Ring: R**2 = 0.0 with the YSI values
+   - nF8Ring: R**2 = 0.0 with the YSI values
+   - nT9Ring: R**2 = 1.0 with nF9Ring
+   - nT10Ring: R**2 = 1.0 with nF10Ring
+   - nT11Ring: R**2 = 1.0 with nF11Ring
+   - nT12Ring: R**2 = 1.0 with nF12Ring
+   - nT8Ring: R**2 = 0.0 with the YSI values
+   - n3HeteroRing: R**2 = 0.0 with the YSI values
+   - nT4HeteroRing: R**2 = 1.0 with n4HeteroRing
+   - nT5HeteroRing: R**2 = 1.0 with n5HeteroRing
+   - nT6HeteroRing: R**2 = 0.81 with n6HeteroRing
+   - n7HeteroRing: R**2 = 0.0 with the YSI values
+   - n8HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - n9HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - n10HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - n11HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - n12HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nG12HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nFHeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nF4HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nF5HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nF6HeteroRing: R**2 = 0.0 with the YSI values
+   - nF7HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nF8HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nF9HeteroRing: R**2 = 0.0 with the YSI values
+   - nF10HeteroRing: R**2 = 0.0 with the YSI values
+   - nF11HeteroRing: R**2 = 0.0 with the YSI values
+   - nF12HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nFG12HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nTHeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nT7HeteroRing: R**2 = 0.0 with the YSI values
+   - nT8HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nT9HeteroRing: R**2 = 0.0 with the YSI values
+   - nT10HeteroRing: R**2 = 0.0 with the YSI values
+   - nT11HeteroRing: R**2 = 0.0 with the YSI values
+   - nT12HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - nTG12HeteroRing: error in R**2 with the YSI values (are all the values the same?)
+   - topoRadius: R**2 = 0.83 with SpMax_D
+   - GGI9: R**2 = 0.75 with GGI8
+   - GGI10: R**2 = 0.0 with the YSI values
+   - JGT: R**2 = 0.87 with JGI1
+   - JGI9: R**2 = 0.0 with the YSI values
+   - SpDiam_D: R**2 = 0.99 with SpMax_D
+   - SpMax_D: R**2 = 1.0 with SpAD_D
+   - EE_D: R**2 = 1.0 with SpAD_D
+   - SpAD_D: R**2 = 0.73 with VAdjMat
+   - VE1_D: R**2 = 0.86 with VE2_D
+   - VR1_D: R**2 = 0.0 with the YSI values
+   - VAdjMat: R**2 = 0.91 with MWC2
+   - MWC2: R**2 = 0.99 with MWC3
+   - MWC4: R**2 = 0.99 with MWC3
+   - MWC5: R**2 = 0.98 with MWC3
+   - MWC6: R**2 = 0.97 with MWC3
+   - MWC7: R**2 = 0.96 with MWC3
+   - MWC8: R**2 = 0.94 with MWC3
+   - MWC9: R**2 = 0.94 with MWC3
+   - MWC10: R**2 = 0.92 with MWC3
+   - MWC3: R**2 = 0.98 with TWC
+   - SRW2: R**2 = 0.97 with TWC
+   - SRW4: R**2 = 0.98 with TWC
+   - SRW6: R**2 = 0.93 with TWC
+   - SRW8: R**2 = 0.88 with TWC
+   - SRW10: R**2 = 0.83 with TWC
+   - TSRW: R**2 = 0.84 with TWC
+   - MW: R**2 = 0.79 with TWC
+   - WTPT-1: R**2 = 0.89 with TWC
+   - SRW3: R**2 = 0.0 with the YSI values
+   - SRW5: R**2 = 0.96 with SRW7
+   - SRW7: R**2 = 1.0 with SRW9
+   - WTPT-4: R**2 = 0.89 with WTPT-3
+
+o  Descriptors reduced to one third of datapoints using RFECV with 5-fold CV: 198 descriptors remaining
+
+o  200 columns remaining after applying duplicate, correlation filters and RFECV:
+   - Name
+   - YSI
+   - HOMO
+   - IP
+   - Dipole module
+   - G of H-bonds H2O
+   - Total FOD
+   - ALogP
+   - AATS0m
+   - AATS4e
+   - AATS5e
+   - AATS6e
+   - AATS5p
+   - AATS8p
+   - AATS4i
+   - AATS7i
+   - AATS3s
+   - AATS5s
+   - ATSC4c
+   - ATSC5c
+   - ATSC6c
+   - ATSC1m
+   - ATSC1v
+   - ATSC3e
+   - ATSC4p
+   - ATSC6p
+   - ATSC3i
+   - ATSC5i
+   - ATSC7i
+   - ATSC8i
+   - ATSC1s
+   - ATSC2s
+   - ATSC3s
+   - ATSC4s
+   - ATSC5s
+   - ATSC7s
+   - AATSC3c
+   - AATSC4c
+   - AATSC6c
+   - AATSC1e
+   - AATSC3e
+   - AATSC4e
+   - AATSC0i
+   - AATSC7i
+   - AATSC0s
+   - AATSC3s
+   - AATSC4s
+   - AATSC5s
+   - AATSC7s
+   - AATSC8s
+   - MATS1c
+   - MATS2c
+   - MATS4c
+   - MATS5c
+   - MATS6c
+   - MATS3v
+   - MATS1e
+   - MATS7e
+   - MATS8e
+   - MATS1p
+   - MATS6p
+   - MATS8i
+   - MATS1s
+   - MATS2s
+   - MATS3s
+   - MATS5s
+   - GATS1c
+   - GATS2c
+   - GATS3c
+   - GATS4c
+   - GATS5c
+   - GATS6c
+   - GATS7c
+   - GATS8c
+   - GATS2m
+   - GATS3m
+   - GATS4m
+   - GATS5m
+   - GATS6m
+   - GATS1e
+   - GATS2i
+   - GATS3i
+   - GATS4i
+   - GATS5i
+   - GATS7i
+   - VE2_DzZ
+   - VE3_DzZ
+   - VE2_Dzp
+   - VR1_Dzp
+   - VR3_Dzp
+   - VE2_Dzs
+   - VE3_Dzs
+   - VR2_Dzs
+   - BCUTw-1h
+   - BCUTc-1l
+   - BCUTc-1h
+   - BCUTp-1l
+   - nBondsD
+   - SpMax1_Bhm
+   - SpMin6_Bhm
+   - SpMin7_Bhm
+   - SpMin8_Bhm
+   - SpMin7_Bhp
+   - SpMin4_Bhi
+   - SpMin6_Bhi
+   - SpMin7_Bhi
+   - SpMax2_Bhs
+   - SpMax3_Bhs
+   - SpMin1_Bhs
+   - SpMin5_Bhs
+   - SpMin6_Bhs
+   - SpMin8_Bhs
+   - C1SP2
+   - C3SP2
+   - C1SP3
+   - SCH-7
+   - SC-5
+   - VPC-5
+   - ASP-2
+   - ASP-3
+   - ASP-4
+   - ASP-5
+   - ASP-6
+   - ASP-7
+   - AVP-3
+   - AVP-4
+   - AVP-5
+   - AVP-6
+   - VE2_Dt
+   - VR2_Dt
+   - VR3_Dt
+   - nHAvin
+   - nsCH3
+   - SHCsats
+   - SHCsatu
+   - SssCH2
+   - SaasC
+   - minwHBa
+   - minHother
+   - mindssC
+   - minaasC
+   - minssssC
+   - maxHBa
+   - maxwHBa
+   - maxHCsats
+   - maxsCH3
+   - maxssCH2
+   - maxdsCH
+   - maxsssCH
+   - hmax
+   - hmin
+   - gmin
+   - ETA_Shape_Y
+   - ETA_BetaP_s
+   - ETA_BetaP_ns_d
+   - ETA_EtaP_F_L
+   - ETA_Eta_B_RC
+   - IC1
+   - BIC2
+   - MIC0
+   - MIC5
+   - nAtomLC
+   - nAtomLAC
+   - MDEC-11
+   - MDEC-12
+   - MDEC-13
+   - MDEC-22
+   - MDEC-33
+   - MLFER_BH
+   - MLFER_S
+   - TPC
+   - piPC7
+   - R_TpiPCTPC
+   - PetitjeanNumber
+   - nFRing
+   - nF12Ring
+   - n6HeteroRing
+   - RotBtFrac
+   - LipinskiFailures
+   - GGI2
+   - GGI3
+   - GGI4
+   - GGI5
+   - GGI7
+   - GGI8
+   - JGI1
+   - JGI2
+   - JGI3
+   - JGI4
+   - JGI5
+   - JGI6
+   - JGI10
+   - VE2_D
+   - VE3_D
+   - VR2_D
+   - TWC
+   - SRW9
+   - WTPT-2
+   - WTPT-3
+   - WPATH
+
+x  The Pearson heatmap was not generated because the number of features and the y value (198) is higher than 30.
+
+o  The curated database was stored in CURATE/YSI-2d-padel_QC_CURATE.csv.
+
+Time CURATE: 43.74 seconds
+

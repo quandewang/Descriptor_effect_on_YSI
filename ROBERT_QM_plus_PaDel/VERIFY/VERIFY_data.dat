@@ -1,0 +1,52 @@
+ROBERT v 1.2.1 2025/06/06 17:27:46 
+How to cite: Dalmau, D.; Alegre Requena, J. V. WIREs Comput Mol Sci. 2024, DOI: 10.1002/WCMS.1733
+
+Command line used in ROBERT: python -m robert --names "Name" --y "YSI" --csv_name "YSI-2d-padel_QC.csv"
+
+
+o  Starting tests to verify the prediction ability of the ML models with the VERIFY module
+
+
+------- Starting model with all variables (No PFI) -------
+
+o  ML model NN_90 (with no PFI filter) and Xy database were loaded, including:
+   - Target value: YSI
+   - Names: Name
+   - Model: NN
+   - Descriptors: ['HOMO', 'IP', 'Dipole module', 'G of H-bonds H2O', 'Total FOD', 'ALogP', 'AATS0m', 'AATS4e', 'AATS5e', 'AATS6e', 'AATS5p', 'AATS8p', 'AATS4i', 'AATS7i', 'AATS3s', 'AATS5s', 'ATSC4c', 'ATSC5c', 'ATSC6c', 'ATSC1m', 'ATSC1v', 'ATSC3e', 'ATSC4p', 'ATSC6p', 'ATSC3i', 'ATSC5i', 'ATSC7i', 'ATSC8i', 'ATSC1s', 'ATSC2s', 'ATSC3s', 'ATSC4s', 'ATSC5s', 'ATSC7s', 'AATSC3c', 'AATSC4c', 'AATSC6c', 'AATSC1e', 'AATSC3e', 'AATSC4e', 'AATSC0i', 'AATSC7i', 'AATSC0s', 'AATSC3s', 'AATSC4s', 'AATSC5s', 'AATSC7s', 'AATSC8s', 'MATS1c', 'MATS2c', 'MATS4c', 'MATS5c', 'MATS6c', 'MATS3v', 'MATS1e', 'MATS7e', 'MATS8e', 'MATS1p', 'MATS6p', 'MATS8i', 'MATS1s', 'MATS2s', 'MATS3s', 'MATS5s', 'GATS1c', 'GATS2c', 'GATS3c', 'GATS4c', 'GATS5c', 'GATS6c', 'GATS7c', 'GATS8c', 'GATS2m', 'GATS3m', 'GATS4m', 'GATS5m', 'GATS6m', 'GATS1e', 'GATS2i', 'GATS3i', 'GATS4i', 'GATS5i', 'GATS7i', 'VE2_DzZ', 'VE3_DzZ', 'VE2_Dzp', 'VR1_Dzp', 'VR3_Dzp', 'VE2_Dzs', 'VE3_Dzs', 'VR2_Dzs', 'BCUTw-1h', 'BCUTc-1l', 'BCUTc-1h', 'BCUTp-1l', 'nBondsD', 'SpMax1_Bhm', 'SpMin6_Bhm', 'SpMin7_Bhm', 'SpMin8_Bhm', 'SpMin7_Bhp', 'SpMin4_Bhi', 'SpMin6_Bhi', 'SpMin7_Bhi', 'SpMax2_Bhs', 'SpMax3_Bhs', 'SpMin1_Bhs', 'SpMin5_Bhs', 'SpMin6_Bhs', 'SpMin8_Bhs', 'C1SP2', 'C3SP2', 'C1SP3', 'SCH-7', 'SC-5', 'VPC-5', 'ASP-2', 'ASP-3', 'ASP-4', 'ASP-5', 'ASP-6', 'ASP-7', 'AVP-3', 'AVP-4', 'AVP-5', 'AVP-6', 'VE2_Dt', 'VR2_Dt', 'VR3_Dt', 'nHAvin', 'nsCH3', 'SHCsats', 'SHCsatu', 'SssCH2', 'SaasC', 'minwHBa', 'minHother', 'mindssC', 'minaasC', 'minssssC', 'maxHBa', 'maxwHBa', 'maxHCsats', 'maxsCH3', 'maxssCH2', 'maxdsCH', 'maxsssCH', 'hmax', 'hmin', 'gmin', 'ETA_Shape_Y', 'ETA_BetaP_s', 'ETA_BetaP_ns_d', 'ETA_EtaP_F_L', 'ETA_Eta_B_RC', 'IC1', 'BIC2', 'MIC0', 'MIC5', 'nAtomLC', 'nAtomLAC', 'MDEC-11', 'MDEC-12', 'MDEC-13', 'MDEC-22', 'MDEC-33', 'MLFER_BH', 'MLFER_S', 'TPC', 'piPC7', 'R_TpiPCTPC', 'PetitjeanNumber', 'nFRing', 'n6HeteroRing', 'RotBtFrac', 'LipinskiFailures', 'GGI2', 'GGI3', 'GGI4', 'GGI5', 'GGI7', 'GGI8', 'JGI1', 'JGI2', 'JGI3', 'JGI4', 'JGI5', 'JGI6', 'JGI10', 'VE2_D', 'VE3_D', 'VR2_D', 'TWC', 'SRW9', 'WTPT-2', 'WTPT-3', 'WPATH']
+   - Training points: 537
+   - Validation points: 60
+   - Test points: 66
+      -  Graph in: VERIFY/CV_train_valid_predict_NN_90_No_PFI.png
+
+   o  VERIFY plot saved in VERIFY/VERIFY_tests_NN_90_No_PFI.png
+      Results of flawed models and cross-validation:
+      Original RMSE (valid. set) 21.74 + 10% & 25% threshold = 23.92 & 27.18
+         o y_mean: PASSED, RMSE = 234.8, higher than thresholds
+         o y_shuffle: PASSED, RMSE = 333.42, higher than thresholds
+         o onehot: PASSED, RMSE = 48.76, higher than thresholds
+         - 5-fold CV : R2 = 0.97, MAE = 21.52, RMSE = 42.89
+
+
+------- Starting model with PFI filter (only important descriptors used) -------
+
+o  ML model RF_90_PFI (with PFI filter) and Xy database were loaded, including:
+   - Target value: YSI
+   - Names: Name
+   - Model: RF
+   - Descriptors: ['IP', 'Dipole module', 'Total FOD', 'ALogP', 'AATS0m', 'AATS5p', 'AATS8p', 'AATS4i', 'ATSC5c', 'ATSC1v', 'ATSC6p', 'ATSC7i', 'ATSC1s', 'ATSC4s', 'AATSC3c', 'AATSC3e', 'AATSC0i', 'AATSC4s', 'MATS1c', 'MATS2c', 'MATS7e', 'MATS1p', 'MATS2s', 'MATS3s', 'GATS3c', 'GATS7c', 'GATS3m', 'GATS1e', 'GATS7i', 'VE2_Dzp', 'VR1_Dzp', 'VR3_Dzp', 'VE2_Dzs', 'VE3_Dzs', 'BCUTw-1h', 'BCUTc-1l', 'BCUTp-1l', 'nBondsD', 'SpMax1_Bhm', 'SpMin6_Bhm', 'SpMin8_Bhm', 'SpMin4_Bhi', 'SpMin7_Bhi', 'SpMax2_Bhs', 'SpMin1_Bhs', 'SpMin5_Bhs', 'SpMin6_Bhs', 'C3SP2', 'SCH-7', 'SC-5', 'VPC-5', 'ASP-7', 'VR3_Dt', 'SaasC', 'minHother', 'minaasC', 'maxHBa', 'maxwHBa', 'hmax', 'gmin', 'ETA_Shape_Y', 'ETA_BetaP_s', 'ETA_EtaP_F_L', 'ETA_Eta_B_RC', 'IC1', 'MIC0', 'MDEC-12', 'MLFER_BH', 'MLFER_S', 'TPC', 'piPC7', 'R_TpiPCTPC', 'LipinskiFailures', 'GGI5', 'JGI2', 'JGI4', 'JGI6', 'VE3_D', 'TWC', 'WTPT-3', 'WPATH']
+   - Training points: 537
+   - Validation points: 60
+   - Test points: 66
+      -  Graph in: VERIFY/CV_train_valid_predict_RF_90_PFI.png
+
+   o  VERIFY plot saved in VERIFY/VERIFY_tests_RF_90_PFI.png
+      Results of flawed models and cross-validation:
+      Original RMSE (valid. set) 22.16 + 10% & 25% threshold = 24.38 & 27.71
+         o y_mean: PASSED, RMSE = 183.3, higher than thresholds
+         o y_shuffle: PASSED, RMSE = 258.46, higher than thresholds
+         o onehot: PASSED, RMSE = 48.8, higher than thresholds
+         - 5-fold CV : R2 = 0.96, MAE = 22.77, RMSE = 49.42
+
+Time VERIFY: 5.98 seconds
+
