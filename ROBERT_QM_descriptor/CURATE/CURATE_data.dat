@@ -1,0 +1,58 @@
+ROBERT v 1.2.1 2025/06/01 21:40:43 
+How to cite: Dalmau, D.; Alegre Requena, J. V. WIREs Comput Mol Sci. 2024, DOI: 10.1002/WCMS.1733
+
+Command line used in ROBERT: python -m robert --aqme --y "YSI" --csv_name "YSI.csv"
+
+
+o  Starting data curation with the CURATE module
+
+o  Database AQME-ROBERT_interpret_YSI.csv loaded successfully, including:
+   - 663 datapoints
+   - 22 accepted descriptors
+   - 2 ignored descriptors
+   - 0 discarded descriptors
+
+o  Analyzing categorical variables
+   - No categorical variables were found
+
+o  Duplication filters activated
+   Excluded datapoints:
+   -  No datapoints were removed
+
+x  WARNING! The number of descriptors (22) is 25 times lower than the number of datapoints (663), the correlation filters are loosen to thres_x = 0.95 and thres_y = 0.0001! Default thresholds (0.9 and 0.001) can be used with "--desc_thres False"
+o  Correlation filter activated with these thresholds: thres_x = 0.95, thres_y = 0.0001
+   Excluded descriptors:
+   - EA: R**2 = 0.97 with Hardness
+   - Total charge: error in R**2 with the YSI values (are all the values the same?)
+   - Fermi-level: R**2 = 0.98 with Electronegativity
+   - Nucleophilicity idx: R**2 = 0.97 with Electronegativity
+
+o  21 columns remaining after applying duplicate, correlation filters and RFECV:
+   - code_name
+   - smiles
+   - YSI
+   - HOMO-LUMO gap
+   - HOMO
+   - LUMO
+   - IP
+   - Dipole module
+   - Global SASA
+   - G solv. in H2O
+   - G of H-bonds H2O
+   - Total polariz. alpha
+   - Total FOD
+   - Hardness
+   - Softness
+   - Electronegativity
+   - Electrophil. idx
+   - Second IP
+   - Second EA
+   - S0-T1 gap
+   - MolLogP
+
+o  The Pearson heatmap was stored in CURATE/Pearson_heatmap.png.
+
+o  The curated database was stored in CURATE/AQME-ROBERT_interpret_YSI_CURATE.csv.
+
+Time CURATE: 1.14 seconds
+

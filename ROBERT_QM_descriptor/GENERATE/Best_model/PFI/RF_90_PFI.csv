@@ -1,0 +1,2 @@
+train,split,model,type,seed,y,names,error_type,X_descriptors,n_estimators,max_depth,max_features,min_samples_split,min_samples_leaf,min_weight_fraction_leaf,ccp_alpha,oob_score,max_samples,rmse
+90,KN,RF,reg,0,YSI,code_name,rmse,"['LUMO', 'IP', 'Dipole module', 'G solv. in H2O', 'Total polariz. alpha', 'Hardness', 'Softness', 'Electronegativity', 'Electrophil. idx', 'Second EA', 'MolLogP']",20,100,0.75,2,1,0,0,False,0.5,17.627607929613344

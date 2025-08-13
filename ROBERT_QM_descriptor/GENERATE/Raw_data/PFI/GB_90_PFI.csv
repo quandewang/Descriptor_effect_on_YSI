@@ -1,0 +1,2 @@
+train,split,model,type,seed,y,names,error_type,X_descriptors,n_estimators,max_depth,max_features,min_samples_split,min_samples_leaf,min_weight_fraction_leaf,ccp_alpha,learning_rate,subsample,validation_fraction,rmse
+90,KN,GB,reg,233,YSI,code_name,rmse,"['LUMO', 'IP', 'Dipole module', 'Global SASA', 'G solv. in H2O', 'G of H-bonds H2O', 'Total polariz. alpha', 'Total FOD', 'Hardness', 'Softness', 'Electronegativity', 'Electrophil. idx', 'Second IP']",60,40,0.25,2,1,0,0,0.05,1.0,0.1,18.45745551996315

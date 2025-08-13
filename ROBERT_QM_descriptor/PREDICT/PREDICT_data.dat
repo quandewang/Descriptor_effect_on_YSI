@@ -1,0 +1,234 @@
+ROBERT v 1.2.1 2025/06/01 21:40:43 
+How to cite: Dalmau, D.; Alegre Requena, J. V. WIREs Comput Mol Sci. 2024, DOI: 10.1002/WCMS.1733
+
+Command line used in ROBERT: python -m robert --aqme --y "YSI" --csv_name "YSI.csv"
+
+
+o  Representation of predictions and analysis of ML models with the PREDICT module
+
+
+------- Starting model with all variables (No PFI) -------
+
+o  ML model RF_90 (with no PFI filter) and Xy database were loaded, including:
+   - Target value: YSI
+   - Names: code_name
+   - Model: RF
+   - Descriptors: ['HOMO-LUMO gap', 'HOMO', 'LUMO', 'IP', 'Dipole module', 'Global SASA', 'G solv. in H2O', 'G of H-bonds H2O', 'Total polariz. alpha', 'Total FOD', 'Hardness', 'Softness', 'Electronegativity', 'Electrophil. idx', 'Second IP', 'Second EA', 'S0-T1 gap', 'MolLogP']
+   - Training points: 537
+   - Validation points: 60
+   - Test points: 66
+      -  Train set with predicted results: PREDICT/RF_90_train_No_PFI.csv
+      -  Validation set with predicted results: PREDICT/RF_90_valid_No_PFI.csv
+      -  Test set with predicted results: PREDICT/RF_90_test_No_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_RF_90_No_PFI.png
+      -  Graph in: PREDICT/CV_variability_RF_90_No_PFI.png
+
+   o  Results saved in PREDICT/Results_RF_90_No_PFI.dat:
+      -  Points Train:Validation:Test = 537:60:66
+      -  Proportion Train:Validation:Test = 81:9:10
+      -  Number of descriptors = 18
+      -  Proportion (train+valid.) points:descriptors = 597:18
+      -  Train : R2 = 0.97, MAE = 1.9e+01, RMSE = 4.1e+01
+      -  Valid. : R2 = 0.99, MAE = 9.7, RMSE = 1.5e+01
+      -  Test : R2 = 0.89, MAE = 3e+01, RMSE = 8.1e+01
+
+   o  Cross-validation variation (with 5-fold CV) graph saved in PREDICT/CV_variability_RF_90_No_PFI.png:
+      -  Standard deviations saved in PREDICT/RF_90_test_No_PFI.csv in the YSI_pred_sd column
+      -  Average SD = 106.75
+      -  y range of dataset (train+valid.) = -4.8 to 1338.9, total 1343.7
+
+   o  SHAP plot saved in PREDICT/SHAP_RF_90_No_PFI.png
+      -  Second EA = min: -2.8e+01, max: 2.3e+02
+      -  Softness = min: -1.3e+01, max: 1.3e+02
+      -  Hardness = min: -2e+01, max: 7.6e+01
+      -  Total polariz. alpha = min: -9.1, max: 6.9e+01
+      -  IP = min: -9.4, max: 6.8e+01
+      -  Dipole module = min: -1.4e+01, max: 5.4e+01
+      -  LUMO = min: -1.6e+01, max: 4.6e+01
+      -  HOMO-LUMO gap = min: -4.6, max: 3.8e+01
+      -  MolLogP = min: -2.3e+01, max: 3.5e+01
+      -  G of H-bonds H2O = min: -9.8, max: 2.7e+01
+      -  G solv. in H2O = min: -7.5, max: 2.3e+01
+      -  Second IP = min: -1.5e+01, max: 1.3e+01
+      -  S0-T1 gap = min: -1.7, max: 1.1e+01
+      -  Electronegativity = min: -4.2e+01, max: 1e+01
+      -  HOMO = min: -2.0, max: 8.8
+      -  Electrophil. idx = min: -7.9, max: 8.5
+      -  Total FOD = min: -2.2, max: 5.4
+      -  Global SASA = min: -4.0, max: 1.7
+
+   o  PFI plot saved in PREDICT/PFI_RF_90_No_PFI.png
+      Original score (from model.score, R2) = 0.99
+      -  Second EA = 6.4e+01 ± 5.8
+      -  Softness = 2.9e+01 ± 2.0
+      -  Total polariz. alpha = 2.9e+01 ± 3.0
+      -  MolLogP = 1.7e+01 ± 0.97
+      -  Dipole module = 1.7e+01 ± 1.1
+      -  Electronegativity = 1.7e+01 ± 3.0
+      -  G of H-bonds H2O = 1.4e+01 ± 1.4
+      -  Hardness = 1e+01 ± 0.56
+      -  LUMO = 8.3 ± 2.2
+      -  IP = 5.5 ± 1.6
+      -  G solv. in H2O = 4.0 ± 1.2
+      -  HOMO-LUMO gap = 2.6 ± 1.6
+      -  Second IP = 2.4 ± 0.72
+      -  HOMO = 1.6 ± 0.57
+      -  Global SASA = 1.2 ± 0.89
+      -  S0-T1 gap = 1.2 ± 1.4
+      -  Total FOD = 0.57 ± 0.67
+      -  Electrophil. idx = 0.33 ± 0.33
+
+   o  The Pearson heatmap was stored in PREDICT/Pearson_heatmap_No_PFI.png.
+      Ideally, variables should show low correlations.
+      x  WARNING! High correlations observed (up to r = -0.97 or R2 = 0.95, for Hardness and Softness)
+
+   o  Outliers plot saved in PREDICT/Outliers_RF_90_No_PFI.png
+      Train: 31 outliers out of 537 datapoints (5.8%)
+      -  58 (7.3 SDs)
+      -  59 (3.2 SDs)
+      -  60 (2.2 SDs)
+      -  61 (4.3 SDs)
+      -  63 (3.6 SDs)
+      -  66 (2.9 SDs)
+      -  67 (3.5 SDs)
+      -  70 (4.5 SDs)
+      -  71 (6.5 SDs)
+      -  78 (2.7 SDs)
+      -  79 (4.0 SDs)
+      -  80 (2.0 SDs)
+      -  81 (2.2 SDs)
+      -  93 (2.4 SDs)
+      -  103 (2.6 SDs)
+      -  104 (3.6 SDs)
+      -  105 (2.7 SDs)
+      -  106 (3.2 SDs)
+      -  107 (4.2 SDs)
+      -  108 (2.6 SDs)
+      -  109 (3.4 SDs)
+      -  110 (2.7 SDs)
+      -  169 (5.0 SDs)
+      -  186 (2.1 SDs)
+      -  227 (5.0 SDs)
+      -  255 (2.5 SDs)
+      -  357 (4.7 SDs)
+      -  626 (3.0 SDs)
+      -  634 (2.8 SDs)
+      -  635 (2.6 SDs)
+      -  637 (3.5 SDs)
+      Validation: 0 outliers out of 60 datapoints (0.0%)
+      Test: 4 outliers out of 66 datapoints (6.1%)
+      -  256 (1.4e+01 SDs)
+      -  163 (2.3 SDs)
+      -  89 (6.4 SDs)
+      -  76 (4.6 SDs)
+
+   o  y-values distribution plot saved in PREDICT/y_distribution_RF_90_No_PFI.png
+      Ideally, the number of datapoints in the four quartiles of the y-range should be uniform (25% population in each quartile) to have similar confidence intervals in the predictions across the y-range
+      -  The number of points in each quartile is Q1: 523, Q2: 38, Q3: 26, Q4: 10
+      x  WARNING! Your data is not uniform (Q4 has 10 points while Q1 has 523)
+
+
+------- Starting model with PFI filter (only important descriptors used) -------
+
+o  ML model RF_90_PFI (with PFI filter) and Xy database were loaded, including:
+   - Target value: YSI
+   - Names: code_name
+   - Model: RF
+   - Descriptors: ['LUMO', 'IP', 'Dipole module', 'G solv. in H2O', 'Total polariz. alpha', 'Hardness', 'Softness', 'Electronegativity', 'Electrophil. idx', 'Second EA', 'MolLogP']
+   - Training points: 537
+   - Validation points: 60
+   - Test points: 66
+      -  Train set with predicted results: PREDICT/RF_90_train_PFI.csv
+      -  Validation set with predicted results: PREDICT/RF_90_valid_PFI.csv
+      -  Test set with predicted results: PREDICT/RF_90_test_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_RF_90_PFI.png
+      -  Graph in: PREDICT/CV_variability_RF_90_PFI.png
+
+   o  Results saved in PREDICT/Results_RF_90_PFI.dat:
+      -  Points Train:Validation:Test = 537:60:66
+      -  Proportion Train:Validation:Test = 81:9:10
+      -  Number of descriptors = 11
+      -  Proportion (train+valid.) points:descriptors = 597:11
+      -  Train : R2 = 0.96, MAE = 2.4e+01, RMSE = 5e+01
+      -  Valid. : R2 = 0.99, MAE = 1e+01, RMSE = 1.8e+01
+      -  Test : R2 = 0.89, MAE = 3.5e+01, RMSE = 8.1e+01
+
+   o  Cross-validation variation (with 5-fold CV) graph saved in PREDICT/CV_variability_RF_90_PFI.png:
+      -  Standard deviations saved in PREDICT/RF_90_test_PFI.csv in the YSI_pred_sd column
+      -  Average SD = 108.08
+      -  y range of dataset (train+valid.) = -4.8 to 1338.9, total 1343.7
+
+   o  SHAP plot saved in PREDICT/SHAP_RF_90_PFI.png
+      -  Second EA = min: -2.8e+01, max: 2e+02
+      -  Hardness = min: -1.3e+01, max: 1.4e+02
+      -  Softness = min: -1.3e+01, max: 1e+02
+      -  Dipole module = min: -2.1e+01, max: 8e+01
+      -  Total polariz. alpha = min: -6.1, max: 4.8e+01
+      -  MolLogP = min: -2.6e+01, max: 3.3e+01
+      -  LUMO = min: -6.4, max: 2.9e+01
+      -  IP = min: -7.5, max: 2.5e+01
+      -  G solv. in H2O = min: -1.1e+01, max: 2.3e+01
+      -  Electrophil. idx = min: -3.2, max: 1.7e+01
+      -  Electronegativity = min: -4.3, max: 2.3
+
+   o  PFI plot saved in PREDICT/PFI_RF_90_PFI.png
+      Original score (from model.score, R2) = 0.99
+      -  Second EA = 5e+01 ± 3.4
+      -  Hardness = 3e+01 ± 3.8
+      -  Dipole module = 1.5e+01 ± 3.8
+      -  Softness = 1.3e+01 ± 4.0
+      -  MolLogP = 6.8 ± 1.6
+      -  Total polariz. alpha = 4.8 ± 1.1
+      -  G solv. in H2O = 4.2 ± 2.6
+      -  IP = 2.1 ± 1.1
+      -  Electronegativity = 1.8 ± 0.62
+      -  LUMO = 0.63 ± 0.5
+      -  Electrophil. idx = -1.9 ± 0.25
+
+   o  The Pearson heatmap was stored in PREDICT/Pearson_heatmap_PFI.png.
+      Ideally, variables should show low correlations.
+      x  WARNING! High correlations observed (up to r = -0.97 or R2 = 0.95, for Hardness and Softness)
+
+   o  Outliers plot saved in PREDICT/Outliers_RF_90_PFI.png
+      Train: 23 outliers out of 537 datapoints (4.3%)
+      -  58 (6.1 SDs)
+      -  59 (3.8 SDs)
+      -  60 (3.9 SDs)
+      -  65 (2.6 SDs)
+      -  67 (2.7 SDs)
+      -  71 (3.9 SDs)
+      -  78 (4.0 SDs)
+      -  103 (2.1 SDs)
+      -  104 (4.9 SDs)
+      -  105 (5.5 SDs)
+      -  106 (2.2 SDs)
+      -  107 (3.7 SDs)
+      -  114 (2.6 SDs)
+      -  124 (5.3 SDs)
+      -  142 (5.3 SDs)
+      -  169 (8.7 SDs)
+      -  357 (2.3 SDs)
+      -  418 (3.1 SDs)
+      -  618 (2.3 SDs)
+      -  634 (3.6 SDs)
+      -  636 (3.2 SDs)
+      -  637 (3.1 SDs)
+      -  639 (2.7 SDs)
+      Validation: 0 outliers out of 60 datapoints (0.0%)
+      Test: 4 outliers out of 66 datapoints (6.1%)
+      -  256 (9.0 SDs)
+      -  102 (2.4 SDs)
+      -  89 (6.8 SDs)
+      -  62 (6.6 SDs)
+
+   o  y-values distribution plot saved in PREDICT/y_distribution_RF_90_PFI.png
+      Ideally, the number of datapoints in the four quartiles of the y-range should be uniform (25% population in each quartile) to have similar confidence intervals in the predictions across the y-range
+      -  The number of points in each quartile is Q1: 523, Q2: 38, Q3: 26, Q4: 10
+      x  WARNING! Your data is not uniform (Q4 has 10 points while Q1 has 523)
+
+Time PREDICT: 30.3 seconds
+
