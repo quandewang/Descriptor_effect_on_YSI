@@ -1,0 +1,2 @@
+model,type,kfold,repeat_kfolds,seed,error_type,y,names,X_descriptors,params,combined_rmse
+RF,reg,5,10,0,rmse,YSI,Name,"['BertzCT', 'piPC10', 'BCUTv-1h', 'AMID_C']","{'n_estimators': 33, 'max_depth': 8, 'min_samples_split': 8, 'min_samples_leaf': 4, 'min_weight_fraction_leaf': 0.010894664567502033, 'max_features': 0.653969460574712, 'ccp_alpha': 0.0013428325340421076, 'max_samples': 0.8081286124012885, 'random_state': 0}",264.91441676999284

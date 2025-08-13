@@ -1,0 +1,2 @@
+model,type,kfold,repeat_kfolds,seed,error_type,y,names,X_descriptors,params,combined_rmse
+GB,reg,5,10,0,rmse,YSI,Name,"['AMID_C', 'BertzCT', 'BCUTv-1h', 'piPC10', 'MPC8']","{'n_estimators': 100, 'learning_rate': 0.2094264145523747, 'max_depth': 5, 'min_samples_split': 2, 'min_samples_leaf': 5, 'subsample': 0.9643188196297763, 'max_features': 0.6195301277909785, 'validation_fraction': 0.2664906791345799, 'min_weight_fraction_leaf': 0.02442135175818861, 'ccp_alpha': 0.0016811510439542787, 'random_state': 0}",246.11907478266852
