@@ -1,0 +1,26 @@
+# generic args
+output_directory: ysi-QD
+random_seed: 987654321
+problem_type: regression
+# run hyperparameter optimization
+#optimize: True
+# optimized results
+fnn_layers: 3
+hidden_size: 1000
+
+# featurization
+input_file: YSI-input.csv
+target_columns: YSI
+smiles_column: SMILES
+descriptor_set: debug
+precomputed: YSI-mordred_QM.csv
+
+# training
+number_repeats: 8
+number_epochs: 100
+batch_size: 32
+patience: 15
+train_size: 0.8
+val_size: 0.1
+test_size: 0.1
+sampler: random
