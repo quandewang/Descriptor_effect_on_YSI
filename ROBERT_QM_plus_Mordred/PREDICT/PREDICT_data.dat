@@ -1,0 +1,721 @@
+ROBERT v 1.2.1 2025/06/06 15:28:20 
+How to cite: Dalmau, D.; Alegre Requena, J. V. WIREs Comput Mol Sci. 2024, DOI: 10.1002/WCMS.1733
+
+Command line used in ROBERT: python -m robert --names "Name" --y "YSI" --csv_name "YSI-mordred_QM.csv"
+
+
+o  Representation of predictions and analysis of ML models with the PREDICT module
+
+
+------- Starting model with all variables (No PFI) -------
+
+o  ML model NN_90 (with no PFI filter) and Xy database were loaded, including:
+   - Target value: YSI
+   - Names: Name
+   - Model: NN
+   - Descriptors: ['HOMO', 'IP', 'Dipole module', 'G of H-bonds H2O', 'Total FOD', 'nBase', 'VR1_A', 'AATS6dv', 'AATS5d', 'AATS0Z', 'AATS4se', 'AATS5se', 'AATS3i', 'AATS5i', 'ATSC2c', 'ATSC3c', 'ATSC5c', 'ATSC6c', 'ATSC8c', 'ATSC0dv', 'ATSC1dv', 'ATSC3dv', 'ATSC4dv', 'ATSC6dv', 'ATSC7dv', 'ATSC8dv', 'ATSC2d', 'ATSC3d', 'ATSC4d', 'ATSC5d', 'ATSC7d', 'ATSC8d', 'ATSC1s', 'ATSC2s', 'ATSC3s', 'ATSC4s', 'ATSC5s', 'ATSC7s', 'ATSC1m', 'ATSC3se', 'ATSC1p', 'ATSC4p', 'ATSC6p', 'ATSC3i', 'ATSC5i', 'ATSC7i', 'ATSC8i', 'AATSC4c', 'AATSC5c', 'AATSC6c', 'AATSC3dv', 'AATSC0d', 'AATSC2d', 'AATSC3d', 'AATSC5d', 'AATSC3s', 'AATSC4s', 'AATSC5s', 'AATSC1se', 'AATSC3se', 'AATSC4se', 'AATSC0i', 'MATS1c', 'MATS2c', 'MATS3c', 'MATS4c', 'MATS5c', 'MATS6c', 'MATS1dv', 'MATS2dv', 'MATS1d', 'MATS2d', 'MATS4d', 'MATS1s', 'MATS2s', 'MATS3s', 'MATS3v', 'MATS1se', 'GATS1c', 'GATS2c', 'GATS3c', 'GATS5c', 'GATS6c', 'GATS1dv', 'GATS2dv', 'GATS4dv', 'GATS5dv', 'GATS6dv', 'GATS1d', 'GATS3d', 'GATS4d', 'GATS6d', 'GATS4s', 'GATS3Z', 'GATS2m', 'GATS4m', 'GATS5m', 'GATS5v', 'GATS2i', 'GATS3i', 'GATS4i', 'GATS6i', 'BCUTc-1h', 'BCUTc-1l', 'BCUTdv-1l', 'BCUTd-1h', 'BCUTd-1l', 'BCUTs-1h', 'BCUTs-1l', 'BCUTZ-1h', 'BCUTv-1h', 'BCUTv-1l', 'BCUTp-1h', 'BalabanJ', 'nBondsD', 'RNCG', 'RPCG', 'C1SP2', 'C1SP3', 'Xch-7d', 'Xc-5d', 'Xpc-6d', 'Xpc-5dv', 'AXp-4d', 'AXp-5d', 'AXp-3dv', 'AXp-5dv', 'Mp', 'NsCH3', 'NdCH2', 'NssCH2', 'NsssN', 'SaasC', 'SaaaC', 'SssssC', 'MAXsCH3', 'MAXssCH2', 'MINssCH2', 'ETA_shape_y', 'ETA_shape_x', 'AETA_beta_s', 'AETA_beta_ns_d', 'AETA_eta_RL', 'AETA_eta_F', 'ETA_eta_BR', 'ETA_dBeta', 'nHBDon', 'IC1', 'IC5', 'SIC4', 'BIC2', 'CIC1', 'MIC1', 'ZMIC5', 'PEOE_VSA2', 'PEOE_VSA3', 'PEOE_VSA11', 'PEOE_VSA12', 'PEOE_VSA13', 'SMR_VSA3', 'SMR_VSA5', 'SMR_VSA9', 'SlogP_VSA1', 'SlogP_VSA8', 'EState_VSA1', 'EState_VSA2', 'EState_VSA3', 'EState_VSA4', 'EState_VSA5', 'EState_VSA8', 'EState_VSA9', 'VSA_EState2', 'VSA_EState4', 'VSA_EState9', 'MDEC-22', 'AMID_C', 'MPC8', 'nHRing', 'n7aRing', 'naHRing', 'nAHRing', 'n5AHRing', 'n6AHRing', 'nFRing', 'n10FRing', 'nG12FRing', 'nFaRing', 'n10FaRing', 'nG12FaRing', 'nFARing', 'n9FARing', 'n10FARing', 'RotRatio', 'GGI2', 'GGI3', 'GGI4', 'GGI5', 'GGI6']
+   - Training points: 537
+   - Validation points: 60
+   - Test points: 66
+      -  Train set with predicted results: PREDICT/NN_90_train_No_PFI.csv
+      -  Validation set with predicted results: PREDICT/NN_90_valid_No_PFI.csv
+      -  Test set with predicted results: PREDICT/NN_90_test_No_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_NN_90_No_PFI.png
+      -  Graph in: PREDICT/CV_variability_NN_90_No_PFI.png
+
+   o  Results saved in PREDICT/Results_NN_90_No_PFI.dat:
+      -  Points Train:Validation:Test = 537:60:66
+      -  Proportion Train:Validation:Test = 81:9:10
+      -  Number of descriptors = 198
+      -  Proportion (train+valid.) points:descriptors = 597:198
+      -  Train : R2 = 1.0, MAE = 8.1, RMSE = 1.3e+01
+      -  Valid. : R2 = 0.99, MAE = 9.7, RMSE = 1.5e+01
+      -  Test : R2 = 0.99, MAE = 1.6e+01, RMSE = 2.8e+01
+
+   o  Cross-validation variation (with 5-fold CV) graph saved in PREDICT/CV_variability_NN_90_No_PFI.png:
+      -  Standard deviations saved in PREDICT/NN_90_test_No_PFI.csv in the YSI_pred_sd column
+      -  Average SD = 51.3
+      -  y range of dataset (train+valid.) = -4.8 to 1338.9, total 1343.7
+
+   o  SHAP plot saved in PREDICT/SHAP_NN_90_No_PFI.png
+      -  SaaaC = min: -3.0, max: 1.7e+02
+      -  GGI4 = min: -1.2e+01, max: 9.4e+01
+      -  SaasC = min: -1.1e+01, max: 9.2e+01
+      -  GGI6 = min: -1.7e+01, max: 7.9e+01
+      -  ATSC4d = min: -6.6, max: 7.2e+01
+      -  MPC8 = min: -6.6, max: 6.5e+01
+      -  n10FaRing = min: -0.94, max: 5.1e+01
+      -  GGI2 = min: -1.2e+01, max: 5.1e+01
+      -  VSA_EState4 = min: -9.1, max: 5e+01
+      -  ETA_dBeta = min: -1.3e+01, max: 4.9e+01
+      -  SlogP_VSA8 = min: -2.6, max: 4.4e+01
+      -  AATS5d = min: -1.3e+01, max: 4.3e+01
+      -  GGI5 = min: -4.7, max: 3.7e+01
+      -  RotRatio = min: -1.3e+01, max: 3.7e+01
+      -  MDEC-22 = min: -1.1e+01, max: 3.6e+01
+      -  ATSC7dv = min: -4.7e+01, max: 3.4e+01
+      -  ATSC5i = min: -1.2e+01, max: 3.2e+01
+      -  GATS2i = min: -3.0, max: 3e+01
+      -  n10FRing = min: -0.52, max: 2.8e+01
+      -  NssCH2 = min: -1.7e+01, max: 2.7e+01
+      -  AATS3i = min: -4.1, max: 2.5e+01
+      -  Xc-5d = min: -1.7, max: 2.5e+01
+      -  AATSC0d = min: -4.4, max: 2.4e+01
+      -  MATS1d = min: -6.8, max: 2.3e+01
+      -  VR1_A = min: -2.3, max: 2.2e+01
+      -  AETA_eta_F = min: -4.4, max: 2.1e+01
+      -  IP = min: -1e+01, max: 2e+01
+      -  ATSC6dv = min: -2e+01, max: 2e+01
+      -  SMR_VSA9 = min: -1.1, max: 2e+01
+      -  BCUTs-1l = min: -6.9, max: 1.8e+01
+      -  BalabanJ = min: -8.4, max: 1.7e+01
+      -  MATS5c = min: -1.9e+01, max: 1.6e+01
+      -  BCUTd-1l = min: -1.5, max: 1.6e+01
+      -  ATSC7d = min: -4.9, max: 1.6e+01
+      -  IC5 = min: -1.1e+01, max: 1.6e+01
+      -  ATSC6p = min: -6.4, max: 1.5e+01
+      -  MATS1se = min: -9.0, max: 1.5e+01
+      -  ATSC2d = min: -2.3e+01, max: 1.5e+01
+      -  ATSC5d = min: -3.2e+01, max: 1.5e+01
+      -  MATS1s = min: -1e+01, max: 1.4e+01
+      -  GATS1c = min: -6.6, max: 1.4e+01
+      -  Mp = min: -3.1, max: 1.4e+01
+      -  AATS6dv = min: -1.2, max: 1.4e+01
+      -  ATSC3i = min: -1.8e+01, max: 1.3e+01
+      -  ATSC0dv = min: -3.0, max: 1.3e+01
+      -  NsCH3 = min: -4.8, max: 1.3e+01
+      -  IC1 = min: -7.0, max: 1.3e+01
+      -  MATS4d = min: -3.2, max: 1.3e+01
+      -  GGI3 = min: -2.0, max: 1.3e+01
+      -  AXp-5dv = min: -1.4e+01, max: 1.2e+01
+      -  SMR_VSA5 = min: -4.4, max: 1.1e+01
+      -  AATSC2d = min: -1.3e+01, max: 1.1e+01
+      -  ATSC4p = min: -1.0, max: 1.1e+01
+      -  ATSC3dv = min: -1e+01, max: 9.8
+      -  Dipole module = min: -8.8, max: 9.7
+      -  SIC4 = min: -1e+01, max: 9.7
+      -  BCUTv-1l = min: -9.0, max: 9.6
+      -  EState_VSA8 = min: -0.98, max: 9.5
+      -  NdCH2 = min: -1.3, max: 9.5
+      -  BIC2 = min: -3.4, max: 8.8
+      -  EState_VSA4 = min: -6.2, max: 8.7
+      -  ETA_shape_y = min: -2.2, max: 8.4
+      -  ATSC7i = min: -2.2, max: 8.4
+      -  AATS5i = min: -4.3, max: 7.9
+      -  MATS2dv = min: -1.5e+01, max: 7.7
+      -  ATSC1m = min: -1.4, max: 7.7
+      -  GATS6i = min: -4.8, max: 7.6
+      -  ATSC1p = min: -3.7, max: 7.6
+      -  MATS6c = min: -2.0, max: 7.3
+      -  EState_VSA5 = min: -6.0, max: 7.3
+      -  MATS3c = min: -1.4e+01, max: 7.1
+      -  GATS5v = min: -5.1, max: 7.1
+      -  BCUTc-1l = min: -3.8, max: 7.1
+      -  C1SP3 = min: -5.4, max: 7.0
+      -  GATS6dv = min: -4.4, max: 6.8
+      -  MATS2d = min: -2.9, max: 6.8
+      -  ZMIC5 = min: -2e+01, max: 6.7
+      -  nBondsD = min: -5.6, max: 6.6
+      -  GATS2m = min: -0.81, max: 6.6
+      -  GATS1dv = min: -2.7, max: 6.4
+      -  AXp-3dv = min: -1.1, max: 6.4
+      -  MAXsCH3 = min: -2.9, max: 6.2
+      -  GATS5dv = min: -4.2, max: 6.0
+      -  ATSC8d = min: -1.9e+01, max: 5.8
+      -  GATS1d = min: -1.2, max: 5.7
+      -  GATS5m = min: -4.3, max: 5.6
+      -  HOMO = min: -1.9e+01, max: 5.6
+      -  BCUTd-1h = min: -4.3, max: 5.5
+      -  CIC1 = min: -3.1, max: 5.5
+      -  VSA_EState2 = min: -9.8, max: 5.4
+      -  EState_VSA3 = min: -9.1, max: 5.2
+      -  GATS4s = min: -7.5, max: 5.1
+      -  Xpc-5dv = min: -4e+01, max: 5.1
+      -  MATS2s = min: -1.3, max: 4.9
+      -  BCUTs-1h = min: -3.3, max: 4.6
+      -  BCUTdv-1l = min: -6e+01, max: 4.1
+      -  MATS1dv = min: -5.7, max: 4.1
+      -  ATSC5c = min: -2.0, max: 4.0
+      -  C1SP2 = min: -1.1e+01, max: 3.7
+      -  MINssCH2 = min: -1.7, max: 3.5
+      -  ATSC1dv = min: -1.3e+01, max: 3.3
+      -  GATS3c = min: -2.1, max: 3.3
+      -  MATS4c = min: -6.6, max: 3.2
+      -  AETA_beta_s = min: -0.96, max: 3.2
+      -  BCUTc-1h = min: -1.6, max: 3.1
+      -  MIC1 = min: -3.8, max: 3.1
+      -  ATSC4s = min: -3.0, max: 3.0
+      -  GATS6d = min: -3.8, max: 3.0
+      -  Xch-7d = min: -2.9e+01, max: 3.0
+      -  nHBDon = min: -1.3, max: 3.0
+      -  AXp-5d = min: -1e+01, max: 3.0
+      -  MATS3s = min: -0.61, max: 2.9
+      -  GATS6c = min: -1.0, max: 2.8
+      -  GATS4d = min: -1.5, max: 2.7
+      -  Total FOD = min: -1.5e+01, max: 2.7
+      -  GATS2dv = min: -2.4, max: 2.7
+      -  nHRing = min: -1.8e+01, max: 2.5
+      -  MATS1c = min: -2.2, max: 2.5
+      -  ATSC3se = min: -1.1, max: 2.4
+      -  GATS3Z = min: -7.2, max: 2.4
+      -  ATSC8i = min: -1.7, max: 2.3
+      -  RNCG = min: -2.4, max: 2.3
+      -  ATSC7s = min: -5.2, max: 2.3
+      -  GATS2c = min: -2.5, max: 2.2
+      -  AMID_C = min: -2.6, max: 2.1
+      -  ATSC2c = min: -1.2, max: 2.1
+      -  AATSC3dv = min: -5.8, max: 2.1
+      -  PEOE_VSA2 = min: -0.48, max: 1.9
+      -  BCUTp-1h = min: -7.1, max: 1.9
+      -  GATS5c = min: -1.1, max: 1.8
+      -  GATS4m = min: -7.2, max: 1.8
+      -  nFaRing = min: -9.6e+01, max: 1.8
+      -  EState_VSA2 = min: -1.4, max: 1.8
+      -  AATS5se = min: -2.4, max: 1.8
+      -  G of H-bonds H2O = min: -4.1, max: 1.8
+      -  SlogP_VSA1 = min: -1.5e+01, max: 1.7
+      -  ATSC6c = min: -0.91, max: 1.7
+      -  MATS3v = min: -4.5, max: 1.7
+      -  BCUTZ-1h = min: -1.3, max: 1.6
+      -  AATSC0i = min: -5.7, max: 1.6
+      -  AATSC3d = min: -7.7, max: 1.5
+      -  GATS3i = min: -5.3, max: 1.5
+      -  RPCG = min: -0.77, max: 1.5
+      -  ATSC3s = min: -2.9, max: 1.4
+      -  ATSC2s = min: -2.8, max: 1.4
+      -  MAXssCH2 = min: -2.5, max: 1.4
+      -  Xpc-6d = min: -9.9, max: 1.3
+      -  ATSC8c = min: -3.5, max: 1.3
+      -  GATS4i = min: -6.7, max: 1.2
+      -  EState_VSA9 = min: -4.7, max: 1.1
+      -  ATSC3d = min: -6.7, max: 1.1
+      -  AXp-4d = min: -3.4, max: 1.1
+      -  PEOE_VSA11 = min: -1.2e+01, max: 1.0
+      -  AATSC4se = min: -0.51, max: 1.0
+      -  AATS0Z = min: -3.2, max: 1.0
+      -  AETA_eta_RL = min: -1.6, max: 0.94
+      -  AATS4se = min: -1.2, max: 0.9
+      -  ATSC8dv = min: -0.39, max: 0.87
+      -  AATSC5c = min: -0.47, max: 0.87
+      -  VSA_EState9 = min: -6.6, max: 0.84
+      -  ATSC5s = min: -0.23, max: 0.79
+      -  MATS2c = min: -0.97, max: 0.77
+      -  n6AHRing = min: -7.2, max: 0.76
+      -  AATSC6c = min: -0.52, max: 0.72
+      -  ETA_eta_BR = min: -4.7, max: 0.68
+      -  AATSC5d = min: -1.0, max: 0.66
+      -  GATS3d = min: -0.41, max: 0.61
+      -  ATSC1s = min: -0.67, max: 0.61
+      -  GATS4dv = min: -2.9, max: 0.52
+      -  AATSC4c = min: -0.3, max: 0.5
+      -  nAHRing = min: -5.4, max: 0.45
+      -  AATSC3se = min: -0.39, max: 0.44
+      -  AATSC3s = min: -0.75, max: 0.39
+      -  AATSC5s = min: -0.75, max: 0.36
+      -  AATSC4s = min: -1.2, max: 0.33
+      -  nFRing = min: -1.2e+01, max: 0.32
+      -  ATSC4dv = min: -1.1, max: 0.31
+      -  AATSC1se = min: -0.65, max: 0.31
+      -  ATSC3c = min: -0.12, max: 0.2
+      -  SMR_VSA3 = min: -3.8, max: 0.2
+      -  nBase = min: -5.1, max: 0.17
+      -  BCUTv-1h = min: -0.3, max: 0.14
+      -  naHRing = min: 0.0, max: 0.0
+      -  nG12FaRing = min: 0.0, max: 0.0
+      -  nG12FRing = min: 0.0, max: 0.0
+      -  nFARing = min: 0.0, max: 0.0
+      -  n9FARing = min: 0.0, max: 0.0
+      -  n7aRing = min: 0.0, max: 0.0
+      -  n5AHRing = min: 0.0, max: 0.0
+      -  n10FARing = min: 0.0, max: 0.0
+      -  SssssC = min: 0.0, max: 0.0
+      -  PEOE_VSA3 = min: 0.0, max: 0.0
+      -  PEOE_VSA13 = min: 0.0, max: 0.0
+      -  PEOE_VSA12 = min: 0.0, max: 0.0
+      -  NsssN = min: 0.0, max: 0.0
+      -  ETA_shape_x = min: 0.0, max: 0.0
+      -  EState_VSA1 = min: 0.0, max: 0.0
+      -  AETA_beta_ns_d = min: 0.0, max: 0.0
+
+   o  PFI plot saved in PREDICT/PFI_NN_90_No_PFI.png
+      Original score (from model.score, R2) = 0.99
+      -  SaasC = 1.5e+01 ± 1.8
+      -  ETA_dBeta = 1.3e+01 ± 1.5
+      -  SaaaC = 1e+01 ± 2.4
+      -  VSA_EState4 = 9.9 ± 0.93
+      -  MDEC-22 = 9.5 ± 1.8
+      -  RotRatio = 9.0 ± 2.8
+      -  GGI6 = 8.0 ± 0.97
+      -  nFaRing = 7.8 ± 0.012
+      -  AATS5d = 7.5 ± 1.6
+      -  ATSC7dv = 6.3 ± 0.68
+      -  MPC8 = 5.8 ± 0.57
+      -  BCUTdv-1l = 5.3 ± 2.0
+      -  GGI4 = 5.1 ± 0.95
+      -  ATSC3i = 4.9 ± 1.4
+      -  BCUTv-1l = 4.5 ± 1.1
+      -  ATSC5d = 4.4 ± 0.25
+      -  Dipole module = 3.9 ± 0.79
+      -  GGI2 = 3.9 ± 0.35
+      -  Xpc-5dv = 3.8 ± 0.58
+      -  BalabanJ = 3.6 ± 1.5
+      -  NssCH2 = 3.5 ± 1.1
+      -  ATSC2d = 3.4 ± 0.32
+      -  SlogP_VSA8 = 3.3 ± 0.44
+      -  MATS1s = 3.1 ± 0.7
+      -  IC5 = 3.1 ± 0.87
+      -  IP = 2.7 ± 0.51
+      -  ATSC6dv = 2.7 ± 0.3
+      -  AETA_eta_F = 2.7 ± 0.4
+      -  GGI5 = 2.6 ± 0.9
+      -  ZMIC5 = 2.2 ± 0.29
+      -  GATS1c = 2.1 ± 1.1
+      -  VR1_A = 2.1 ± 0.97
+      -  VSA_EState2 = 2.0 ± 1.3
+      -  MATS1se = 2.0 ± 0.57
+      -  NsCH3 = 1.9 ± 0.89
+      -  SMR_VSA5 = 1.8 ± 0.35
+      -  Xch-7d = 1.7 ± 0.48
+      -  MATS2dv = 1.5 ± 0.56
+      -  EState_VSA3 = 1.5 ± 1.1
+      -  nHRing = 1.4 ± 1.2
+      -  AXp-5dv = 1.4 ± 0.49
+      -  HOMO = 1.4 ± 0.55
+      -  BCUTd-1l = 1.4 ± 0.079
+      -  MATS3c = 1.3 ± 1.5
+      -  C1SP2 = 1.3 ± 0.84
+      -  ATSC3dv = 1.3 ± 0.38
+      -  GATS3Z = 1.3 ± 0.76
+      -  Mp = 1.2 ± 0.25
+      -  SIC4 = 1.2 ± 1.1
+      -  C1SP3 = 1.1 ± 0.51
+      -  GATS2i = 1.1 ± 0.55
+      -  AATSC2d = 1.1 ± 0.46
+      -  SMR_VSA9 = 0.99 ± 0.45
+      -  BCUTs-1l = 0.96 ± 0.33
+      -  GATS4s = 0.93 ± 1.2
+      -  AATS6dv = 0.9 ± 0.15
+      -  ATSC1dv = 0.89 ± 0.59
+      -  EState_VSA5 = 0.87 ± 0.84
+      -  BCUTc-1l = 0.84 ± 0.54
+      -  BCUTs-1h = 0.8 ± 0.39
+      -  GATS3i = 0.77 ± 0.46
+      -  IC1 = 0.77 ± 0.5
+      -  AATS3i = 0.73 ± 0.17
+      -  ATSC6p = 0.72 ± 0.64
+      -  GATS5m = 0.71 ± 0.23
+      -  NdCH2 = 0.69 ± 0.15
+      -  ATSC1m = 0.68 ± 0.27
+      -  ATSC0dv = 0.68 ± 0.37
+      -  AATSC3dv = 0.67 ± 0.15
+      -  Xpc-6d = 0.67 ± 0.22
+      -  CIC1 = 0.65 ± 0.16
+      -  GATS6d = 0.64 ± 0.25
+      -  BIC2 = 0.59 ± 0.27
+      -  nFRing = 0.57 ± 0.03
+      -  EState_VSA4 = 0.53 ± 0.7
+      -  ATSC4d = 0.53 ± 0.58
+      -  nAHRing = 0.52 ± 0.34
+      -  ATSC7s = 0.5 ± 0.2
+      -  BCUTd-1h = 0.49 ± 0.54
+      -  EState_VSA8 = 0.48 ± 0.096
+      -  AATS5i = 0.46 ± 0.29
+      -  Total FOD = 0.46 ± 0.49
+      -  AATSC3d = 0.46 ± 0.092
+      -  MATS1dv = 0.45 ± 0.43
+      -  ATSC1p = 0.45 ± 0.56
+      -  MATS3v = 0.45 ± 0.27
+      -  ATSC8d = 0.44 ± 0.34
+      -  AXp-5d = 0.42 ± 0.41
+      -  RNCG = 0.41 ± 0.19
+      -  ETA_eta_BR = 0.4 ± 0.15
+      -  GATS1dv = 0.37 ± 0.4
+      -  GATS2c = 0.3 ± 0.21
+      -  ATSC3d = 0.3 ± 0.12
+      -  MATS4c = 0.3 ± 0.12
+      -  BCUTc-1h = 0.29 ± 0.2
+      -  GATS5v = 0.26 ± 0.18
+      -  AATSC5d = 0.24 ± 0.062
+      -  ATSC4s = 0.24 ± 0.64
+      -  PEOE_VSA2 = 0.23 ± 0.38
+      -  BCUTZ-1h = 0.21 ± 0.15
+      -  ATSC8i = 0.2 ± 0.042
+      -  RPCG = 0.2 ± 0.078
+      -  AATSC0i = 0.19 ± 0.21
+      -  EState_VSA2 = 0.19 ± 0.23
+      -  GATS4i = 0.17 ± 0.13
+      -  GATS4m = 0.17 ± 0.22
+      -  GATS5dv = 0.17 ± 0.43
+      -  AATSC0d = 0.15 ± 0.35
+      -  GATS4dv = 0.15 ± 0.16
+      -  nBondsD = 0.15 ± 0.61
+      -  SlogP_VSA1 = 0.13 ± 0.076
+      -  MAXssCH2 = 0.12 ± 0.14
+      -  nBase = 0.12 ± 0.021
+      -  MATS1d = 0.12 ± 0.27
+      -  AETA_beta_s = 0.11 ± 0.1
+      -  nHBDon = 0.08 ± 0.13
+      -  MATS2c = 0.079 ± 0.088
+      -  GATS6i = 0.075 ± 0.38
+      -  SMR_VSA3 = 0.073 ± 0.013
+      -  GATS1d = 0.065 ± 0.1
+      -  EState_VSA9 = 0.061 ± 0.24
+      -  ATSC8dv = 0.059 ± 0.053
+      -  AATSC5c = 0.055 ± 0.012
+      -  ATSC2s = 0.048 ± 0.27
+      -  ATSC3se = 0.048 ± 0.19
+      -  BCUTp-1h = 0.045 ± 0.19
+      -  ATSC2c = 0.042 ± 0.24
+      -  ATSC4dv = 0.041 ± 0.046
+      -  GATS2dv = 0.039 ± 0.23
+      -  G of H-bonds H2O = 0.038 ± 0.17
+      -  n6AHRing = 0.036 ± 0.054
+      -  ATSC3s = 0.036 ± 0.25
+      -  AATS0Z = 0.034 ± 0.097
+      -  MATS2s = 0.033 ± 0.29
+      -  ATSC5s = 0.028 ± 0.052
+      -  ATSC1s = 0.028 ± 0.057
+      -  VSA_EState9 = 0.027 ± 0.54
+      -  GATS3c = 0.024 ± 0.74
+      -  AATSC1se = 0.012 ± 0.027
+      -  ATSC8c = 0.0096 ± 0.14
+      -  AATSC4c = 0.0019 ± 0.027
+      -  AATSC4s = 0.0014 ± 0.091
+      -  AATS4se = 0.00028 ± 0.16
+      -  naHRing = 0.0 ± 0.0
+      -  nG12FaRing = 0.0 ± 0.0
+      -  nG12FRing = 0.0 ± 0.0
+      -  nFARing = 0.0 ± 0.0
+      -  n9FARing = 0.0 ± 0.0
+      -  n7aRing = 0.0 ± 0.0
+      -  n5AHRing = 0.0 ± 0.0
+      -  n10FARing = 0.0 ± 0.0
+      -  SssssC = 0.0 ± 0.0
+      -  PEOE_VSA3 = 0.0 ± 0.0
+      -  PEOE_VSA13 = 0.0 ± 0.0
+      -  PEOE_VSA12 = 0.0 ± 0.0
+      -  NsssN = 0.0 ± 0.0
+      -  ETA_shape_x = 0.0 ± 0.0
+      -  EState_VSA1 = 0.0 ± 0.0
+      -  AETA_beta_ns_d = 0.0 ± 0.0
+      -  MATS6c = -0.011 ± 0.12
+      -  AATSC4se = -0.011 ± 0.084
+      -  AETA_eta_RL = -0.013 ± 0.09
+      -  AATSC6c = -0.015 ± 0.069
+      -  ATSC3c = -0.02 ± 0.0096
+      -  AATSC3se = -0.021 ± 0.074
+      -  AATSC3s = -0.022 ± 0.11
+      -  PEOE_VSA11 = -0.026 ± 0.046
+      -  MATS2d = -0.028 ± 0.2
+      -  GATS3d = -0.041 ± 0.021
+      -  BCUTv-1h = -0.041 ± 0.017
+      -  AATS5se = -0.043 ± 0.23
+      -  AATSC5s = -0.056 ± 0.055
+      -  GATS5c = -0.06 ± 0.057
+      -  MINssCH2 = -0.072 ± 0.16
+      -  ATSC6c = -0.085 ± 0.062
+      -  AXp-3dv = -0.086 ± 0.18
+      -  ETA_shape_y = -0.095 ± 0.33
+      -  AXp-4d = -0.11 ± 0.1
+      -  MAXsCH3 = -0.15 ± 0.19
+      -  GATS6c = -0.16 ± 0.33
+      -  AMID_C = -0.18 ± 0.089
+      -  MATS1c = -0.18 ± 0.16
+      -  GATS4d = -0.19 ± 0.12
+      -  MIC1 = -0.21 ± 0.095
+      -  ATSC4p = -0.23 ± 0.093
+      -  ATSC7i = -0.24 ± 0.041
+      -  MATS3s = -0.28 ± 0.02
+      -  ATSC5c = -0.36 ± 0.036
+      -  GATS6dv = -0.37 ± 0.4
+      -  GATS2m = -0.4 ± 0.12
+      -  MATS5c = -0.42 ± 0.89
+      -  MATS4d = -0.49 ± 0.17
+      -  ATSC7d = -0.68 ± 0.17
+      -  n10FaRing = -0.69 ± 0.048
+      -  GGI3 = -0.81 ± 0.2
+      -  n10FRing = -0.88 ± 0.036
+      -  Xc-5d = -1.1 ± 0.19
+      -  ATSC5i = -1.3 ± 0.13
+
+   x  The Pearson heatmap was not generated because the number of features and the y value (198) is higher than 30.
+      Ideally, variables should show low correlations.
+      x  WARNING! High correlations observed (up to r = 0.85 or R2 = 0.73, for nFaRing and n10FaRing)
+
+   o  Outliers plot saved in PREDICT/Outliers_NN_90_No_PFI.png
+      Train: 22 outliers out of 537 datapoints (4.1%)
+      -  M61 (3.2 SDs)
+      -  M68 (4.5 SDs)
+      -  M70 (8.9 SDs)
+      -  M72 (2.2 SDs)
+      -  M73 (6.2 SDs)
+      -  M83 (4.9 SDs)
+      -  M100 (2.6 SDs)
+      -  M104 (2.3 SDs)
+      -  M107 (2.6 SDs)
+      -  M113 (2.4 SDs)
+      -  M119 (5.6 SDs)
+      -  M121 (4.3 SDs)
+      -  M122 (2.6 SDs)
+      -  M124 (3.6 SDs)
+      -  M158 (2.9 SDs)
+      -  M159 (2.1 SDs)
+      -  M173 (3.8 SDs)
+      -  M176 (2.5 SDs)
+      -  M196 (2.2 SDs)
+      -  M227 (2.0 SDs)
+      -  M618 (3.6 SDs)
+      -  M635 (3.0 SDs)
+      Validation: 6 outliers out of 60 datapoints (10.0%)
+      -  M96 (3.1 SDs)
+      -  M105 (2.6 SDs)
+      -  M153 (2.0 SDs)
+      -  M225 (4.2 SDs)
+      -  M230 (2.9 SDs)
+      -  M255 (2.2 SDs)
+      Test: 9 outliers out of 66 datapoints (13.6%)
+      -  M247 (6.4 SDs)
+      -  M419 (2.7 SDs)
+      -  M187 (3.1 SDs)
+      -  M256 (2.5 SDs)
+      -  M370 (6.6 SDs)
+      -  M355 (7.4 SDs)
+      -  M137 (5.7 SDs)
+      -  M102 (3.4 SDs)
+      -  M62 (1.2e+01 SDs)
+
+   o  y-values distribution plot saved in PREDICT/y_distribution_NN_90_No_PFI.png
+      Ideally, the number of datapoints in the four quartiles of the y-range should be uniform (25% population in each quartile) to have similar confidence intervals in the predictions across the y-range
+      -  The number of points in each quartile is Q1: 523, Q2: 38, Q3: 26, Q4: 10
+      x  WARNING! Your data is not uniform (Q4 has 10 points while Q1 has 523)
+
+
+------- Starting model with PFI filter (only important descriptors used) -------
+
+o  ML model RF_90_PFI (with PFI filter) and Xy database were loaded, including:
+   - Target value: YSI
+   - Names: Name
+   - Model: RF
+   - Descriptors: ['IP', 'Dipole module', 'G of H-bonds H2O', 'Total FOD', 'VR1_A', 'AATS5d', 'AATS4se', 'AATS5i', 'ATSC0dv', 'ATSC1dv', 'ATSC4dv', 'ATSC7d', 'ATSC5s', 'ATSC1m', 'ATSC1p', 'AATSC3dv', 'AATSC3d', 'AATSC5s', 'AATSC1se', 'AATSC4se', 'MATS1c', 'MATS6c', 'MATS1d', 'MATS1s', 'MATS3v', 'MATS1se', 'GATS1c', 'GATS2c', 'GATS3c', 'GATS6c', 'GATS2dv', 'GATS4dv', 'GATS4s', 'GATS3Z', 'GATS2m', 'GATS4i', 'BCUTc-1l', 'BCUTd-1h', 'BCUTZ-1h', 'BCUTv-1h', 'BCUTv-1l', 'BCUTp-1h', 'BalabanJ', 'RNCG', 'RPCG', 'Xch-7d', 'Xc-5d', 'Xpc-5dv', 'AXp-5d', 'SaasC', 'MAXssCH2', 'MINssCH2', 'ETA_eta_BR', 'ETA_dBeta', 'IC5', 'BIC2', 'CIC1', 'SMR_VSA5', 'SMR_VSA9', 'SlogP_VSA8', 'EState_VSA4', 'EState_VSA8', 'VSA_EState4', 'MDEC-22', 'AMID_C', 'MPC8', 'GGI2', 'GGI3']
+   - Training points: 537
+   - Validation points: 60
+   - Test points: 66
+      -  Train set with predicted results: PREDICT/RF_90_train_PFI.csv
+      -  Validation set with predicted results: PREDICT/RF_90_valid_PFI.csv
+      -  Test set with predicted results: PREDICT/RF_90_test_PFI.csv
+
+   o  Saving graphs and CSV databases in:
+      -  Graph in: PREDICT/Results_RF_90_PFI.png
+      -  Graph in: PREDICT/CV_variability_RF_90_PFI.png
+
+   o  Results saved in PREDICT/Results_RF_90_PFI.dat:
+      -  Points Train:Validation:Test = 537:60:66
+      -  Proportion Train:Validation:Test = 81:9:10
+      -  Number of descriptors = 68
+      -  Proportion (train+valid.) points:descriptors = 597:68
+      -  Train : R2 = 0.99, MAE = 1.7e+01, RMSE = 2.9e+01
+      -  Valid. : R2 = 0.99, MAE = 1.2e+01, RMSE = 1.8e+01
+      -  Test : R2 = 0.99, MAE = 1.6e+01, RMSE = 2.7e+01
+
+   o  Cross-validation variation (with 5-fold CV) graph saved in PREDICT/CV_variability_RF_90_PFI.png:
+      -  Standard deviations saved in PREDICT/RF_90_test_PFI.csv in the YSI_pred_sd column
+      -  Average SD = 60.33
+      -  y range of dataset (train+valid.) = -4.8 to 1338.9, total 1343.7
+
+   o  SHAP plot saved in PREDICT/SHAP_RF_90_PFI.png
+      -  BCUTv-1h = min: -2.7e+01, max: 1.5e+02
+      -  AMID_C = min: -3e+01, max: 1.5e+02
+      -  MPC8 = min: -6.2, max: 1.2e+02
+      -  ETA_dBeta = min: -5.4, max: 8.8e+01
+      -  EState_VSA8 = min: -4.4, max: 5e+01
+      -  BCUTp-1h = min: -1.5e+01, max: 4.4e+01
+      -  SaasC = min: -9.9, max: 2.9e+01
+      -  VR1_A = min: -1.3e+01, max: 2.5e+01
+      -  Xpc-5dv = min: -2.5, max: 2.5e+01
+      -  ATSC1m = min: -2.1, max: 2.3e+01
+      -  ATSC1p = min: -2.5, max: 2.3e+01
+      -  AXp-5d = min: -5.3, max: 2.2e+01
+      -  AATS5d = min: -1.4, max: 1.6e+01
+      -  AATSC1se = min: -2.8, max: 1.5e+01
+      -  SlogP_VSA8 = min: -1.2, max: 1.2e+01
+      -  IP = min: -4.5, max: 1.2e+01
+      -  ATSC0dv = min: -3.8, max: 1e+01
+      -  Total FOD = min: -4.7, max: 8.6
+      -  RNCG = min: -6.4, max: 8.4
+      -  BalabanJ = min: -1.3, max: 8.1
+      -  GGI2 = min: -1.3, max: 6.6
+      -  BCUTv-1l = min: -0.99, max: 6.3
+      -  MDEC-22 = min: -2.6, max: 5.0
+      -  GGI3 = min: -0.63, max: 4.9
+      -  RPCG = min: -1.7, max: 4.8
+      -  VSA_EState4 = min: -1.3, max: 4.6
+      -  ATSC1dv = min: -2.6, max: 4.5
+      -  AATS5i = min: -0.59, max: 3.9
+      -  BCUTd-1h = min: -2.1, max: 3.7
+      -  BCUTc-1l = min: -0.77, max: 3.7
+      -  GATS2dv = min: -0.62, max: 3.5
+      -  GATS2m = min: -0.45, max: 3.2
+      -  BCUTZ-1h = min: -0.59, max: 3.1
+      -  MINssCH2 = min: -0.54, max: 2.9
+      -  AATSC3d = min: -2.2, max: 2.9
+      -  ETA_eta_BR = min: -1.5, max: 2.6
+      -  MATS1d = min: -0.32, max: 2.5
+      -  CIC1 = min: -1.9, max: 2.4
+      -  BIC2 = min: -0.27, max: 2.4
+      -  Xc-5d = min: -0.17, max: 2.2
+      -  MATS1se = min: -0.89, max: 2.1
+      -  MATS1c = min: -1.0, max: 1.8
+      -  GATS6c = min: -2.3, max: 1.6
+      -  MATS1s = min: -2.6, max: 1.6
+      -  IC5 = min: -0.74, max: 1.4
+      -  G of H-bonds H2O = min: -0.86, max: 1.3
+      -  GATS1c = min: -0.5, max: 0.95
+      -  Dipole module = min: -0.53, max: 0.92
+      -  EState_VSA4 = min: -0.27, max: 0.88
+      -  ATSC4dv = min: -1.2, max: 0.83
+      -  AATSC3dv = min: -4.6, max: 0.83
+      -  AATSC5s = min: -0.79, max: 0.79
+      -  GATS2c = min: -0.52, max: 0.79
+      -  AATS4se = min: -2.6, max: 0.77
+      -  ATSC5s = min: -0.68, max: 0.75
+      -  GATS4s = min: -3.8, max: 0.73
+      -  GATS3c = min: -1.0, max: 0.66
+      -  GATS4i = min: -4.2, max: 0.62
+      -  SMR_VSA5 = min: -1.8, max: 0.61
+      -  AATSC4se = min: -2.1, max: 0.48
+      -  MAXssCH2 = min: -0.76, max: 0.47
+      -  ATSC7d = min: -0.3, max: 0.46
+      -  MATS6c = min: -0.67, max: 0.46
+      -  MATS3v = min: -1.3, max: 0.39
+      -  GATS3Z = min: -0.27, max: 0.29
+      -  Xch-7d = min: -0.37, max: 0.27
+      -  GATS4dv = min: -0.22, max: 0.16
+      -  SMR_VSA9 = min: -2.0, max: 0.12
+
+   o  PFI plot saved in PREDICT/PFI_RF_90_PFI.png
+      Original score (from model.score, R2) = 0.99
+      -  BCUTv-1h = 4.5e+01 ± 4.3
+      -  AMID_C = 3.7e+01 ± 5.1
+      -  BCUTp-1h = 1.7e+01 ± 1.3
+      -  MPC8 = 1.5e+01 ± 1.7
+      -  ETA_dBeta = 9.7 ± 2.1
+      -  SaasC = 7.4 ± 1.0
+      -  EState_VSA8 = 4.8 ± 1.7
+      -  VR1_A = 4.7 ± 1.9
+      -  IP = 2.2 ± 0.75
+      -  AXp-5d = 1.9 ± 0.85
+      -  RNCG = 1.3 ± 1.3
+      -  ATSC0dv = 0.94 ± 0.4
+      -  MDEC-22 = 0.79 ± 0.26
+      -  AATS5d = 0.67 ± 0.29
+      -  SlogP_VSA8 = 0.5 ± 0.13
+      -  BalabanJ = 0.48 ± 0.14
+      -  Total FOD = 0.45 ± 0.36
+      -  AATSC3dv = 0.44 ± 0.21
+      -  Xpc-5dv = 0.41 ± 0.51
+      -  MATS1c = 0.38 ± 0.087
+      -  AATSC3d = 0.38 ± 0.085
+      -  VSA_EState4 = 0.38 ± 0.16
+      -  ATSC1m = 0.37 ± 0.39
+      -  GATS4s = 0.37 ± 0.25
+      -  CIC1 = 0.36 ± 0.069
+      -  AATSC5s = 0.32 ± 0.19
+      -  G of H-bonds H2O = 0.31 ± 0.17
+      -  GATS4i = 0.31 ± 0.059
+      -  SMR_VSA9 = 0.25 ± 0.014
+      -  AATSC1se = 0.22 ± 0.42
+      -  AATSC4se = 0.21 ± 0.07
+      -  MATS1se = 0.21 ± 0.12
+      -  Dipole module = 0.2 ± 0.07
+      -  GGI3 = 0.2 ± 0.23
+      -  ATSC1p = 0.19 ± 0.28
+      -  GATS3c = 0.17 ± 0.26
+      -  ETA_eta_BR = 0.15 ± 0.16
+      -  BIC2 = 0.13 ± 0.015
+      -  BCUTZ-1h = 0.12 ± 0.16
+      -  EState_VSA4 = 0.1 ± 0.073
+      -  ATSC4dv = 0.056 ± 0.04
+      -  ATSC5s = 0.048 ± 0.014
+      -  ATSC7d = 0.034 ± 0.038
+      -  GATS3Z = 0.028 ± 0.048
+      -  Xch-7d = 0.026 ± 0.0031
+      -  MATS6c = 0.02 ± 0.062
+      -  SMR_VSA5 = 0.017 ± 0.076
+      -  AATS5i = 0.015 ± 0.17
+      -  GATS6c = 0.014 ± 0.37
+      -  GGI2 = -0.014 ± 0.22
+      -  GATS4dv = -0.015 ± 0.027
+      -  GATS1c = -0.018 ± 0.094
+      -  MATS3v = -0.02 ± 0.035
+      -  GATS2dv = -0.021 ± 0.13
+      -  MINssCH2 = -0.024 ± 0.27
+      -  BCUTd-1h = -0.034 ± 0.22
+      -  MAXssCH2 = -0.048 ± 0.08
+      -  GATS2c = -0.053 ± 0.039
+      -  BCUTv-1l = -0.096 ± 0.5
+      -  IC5 = -0.098 ± 0.091
+      -  MATS1d = -0.13 ± 0.14
+      -  ATSC1dv = -0.13 ± 0.095
+      -  MATS1s = -0.14 ± 0.15
+      -  Xc-5d = -0.15 ± 0.033
+      -  GATS2m = -0.17 ± 0.01
+      -  AATS4se = -0.19 ± 0.19
+      -  BCUTc-1l = -0.28 ± 0.12
+      -  RPCG = -0.28 ± 0.74
+
+   x  The Pearson heatmap was not generated because the number of features and the y value (68) is higher than 30.
+      Ideally, variables should show low correlations.
+      x  WARNING! Noticeable correlations observed (up to r = -0.83 or R2 = 0.69, for BCUTv-1l and RNCG)
+
+   o  Outliers plot saved in PREDICT/Outliers_RF_90_PFI.png
+      Train: 31 outliers out of 537 datapoints (5.8%)
+      -  M58 (4.6 SDs)
+      -  M59 (4.9 SDs)
+      -  M60 (3.4 SDs)
+      -  M61 (4.9 SDs)
+      -  M64 (3.3 SDs)
+      -  M67 (3.3 SDs)
+      -  M71 (5.1 SDs)
+      -  M75 (3.3 SDs)
+      -  M77 (2.7 SDs)
+      -  M78 (3.1 SDs)
+      -  M83 (3.7 SDs)
+      -  M106 (3.2 SDs)
+      -  M107 (4.0 SDs)
+      -  M111 (2.3 SDs)
+      -  M113 (3.2 SDs)
+      -  M122 (2.5 SDs)
+      -  M124 (3.4 SDs)
+      -  M142 (2.9 SDs)
+      -  M169 (2.9 SDs)
+      -  M172 (2.5 SDs)
+      -  M173 (2.2 SDs)
+      -  M174 (5.0 SDs)
+      -  M176 (2.2 SDs)
+      -  M178 (3.3 SDs)
+      -  M179 (2.3 SDs)
+      -  M203 (5.0 SDs)
+      -  M337 (2.4 SDs)
+      -  M344 (2.5 SDs)
+      -  M363 (3.2 SDs)
+      -  M626 (2.0 SDs)
+      -  M635 (2.3 SDs)
+      Validation: 2 outliers out of 60 datapoints (3.3%)
+      -  M53 (2.2 SDs)
+      -  M175 (2.2 SDs)
+      Test: 5 outliers out of 66 datapoints (7.6%)
+      -  M256 (2.1 SDs)
+      -  M355 (2.7 SDs)
+      -  M115 (2.1 SDs)
+      -  M102 (2.6 SDs)
+      -  M76 (2.7 SDs)
+
+   o  y-values distribution plot saved in PREDICT/y_distribution_RF_90_PFI.png
+      Ideally, the number of datapoints in the four quartiles of the y-range should be uniform (25% population in each quartile) to have similar confidence intervals in the predictions across the y-range
+      -  The number of points in each quartile is Q1: 523, Q2: 38, Q3: 26, Q4: 10
+      x  WARNING! Your data is not uniform (Q4 has 10 points while Q1 has 523)
+
+Time PREDICT: 37.17 seconds
+
