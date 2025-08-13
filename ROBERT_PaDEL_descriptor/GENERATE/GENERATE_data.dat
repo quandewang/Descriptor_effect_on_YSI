@@ -1,0 +1,329 @@
+ROBERT v 1.2.1 2025/05/12 12:33:42 
+How to cite: Dalmau, D.; Alegre Requena, J. V. WIREs Comput Mol Sci. 2024, DOI: 10.1002/WCMS.1733
+
+Command line used in ROBERT: python -m robert --names "Name" --y "YSI" --csv_name "YSI-2d-padel.csv"
+
+
+o  Starting generation of ML models with the GENERATE module
+
+o  Database YSI-2d-padel_CURATE.csv loaded successfully, including:
+   - 663 datapoints
+   - 198 accepted descriptors
+   - 1 ignored descriptors
+   - 0 discarded descriptors
+
+o  Before hyproptimization, 10% of the data was separated as test set, using an even distribution of data points across the range of y values. The remaining data points will be split into training and validation.
+
+o  The database contains 597 datapoints, the default random splitting will be used to select training and validation sets.
+
+x    WARNING! The database is imbalanced (imbalance ratio > 10, more values in the low half of values), KN data splitting will replace the default random splitting. You can use random splitting with "--auto_kn False".
+
+o  Starting heatmap scan with 4 ML models (['RF', 'GB', 'NN', 'MVL']) and 4 training sizes ([60, 70, 80, 90]).
+   Heatmap generation:
+   - 1/96 - Training size: 60, ML model: RF, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 2/96 - Training size: 60, ML model: RF, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 3/96 - Training size: 60, ML model: RF, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 4/96 - Training size: 60, ML model: RF, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 5/96 - Training size: 60, ML model: RF, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 6/96 - Training size: 60, ML model: RF, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 7/96 - Training size: 60, ML model: GB, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 8/96 - Training size: 60, ML model: GB, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 9/96 - Training size: 60, ML model: GB, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 10/96 - Training size: 60, ML model: GB, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 11/96 - Training size: 60, ML model: GB, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 12/96 - Training size: 60, ML model: GB, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 13/96 - Training size: 60, ML model: NN, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 14/96 - Training size: 60, ML model: NN, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 15/96 - Training size: 60, ML model: NN, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 16/96 - Training size: 60, ML model: NN, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 17/96 - Training size: 60, ML model: NN, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 18/96 - Training size: 60, ML model: NN, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 19/96 - Training size: 60, ML model: MVL, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 20/96 - Training size: 60, ML model: MVL, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 21/96 - Training size: 60, ML model: MVL, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 22/96 - Training size: 60, ML model: MVL, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 23/96 - Training size: 60, ML model: MVL, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 24/96 - Training size: 60, ML model: MVL, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 25/96 - Training size: 70, ML model: RF, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+x  There is an error in the hyperopt module, 1) are you using type ="clas" for regression y values instead of type="reg"? or 2) are you using very small partition sizes for validation sets (fix with train="[60,70]" for example)? or 3) bad allocation memory issue
+   - 26/96 - Training size: 70, ML model: RF, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+x  There is an error in the hyperopt module, 1) are you using type ="clas" for regression y values instead of type="reg"? or 2) are you using very small partition sizes for validation sets (fix with train="[60,70]" for example)? or 3) bad allocation memory issue
+   - 27/96 - Training size: 70, ML model: RF, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+x  There is an error in the hyperopt module, 1) are you using type ="clas" for regression y values instead of type="reg"? or 2) are you using very small partition sizes for validation sets (fix with train="[60,70]" for example)? or 3) bad allocation memory issue
+   - 28/96 - Training size: 70, ML model: RF, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+x  There is an error in the hyperopt module, 1) are you using type ="clas" for regression y values instead of type="reg"? or 2) are you using very small partition sizes for validation sets (fix with train="[60,70]" for example)? or 3) bad allocation memory issue
+   - 29/96 - Training size: 70, ML model: RF, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+x  There is an error in the hyperopt module, 1) are you using type ="clas" for regression y values instead of type="reg"? or 2) are you using very small partition sizes for validation sets (fix with train="[60,70]" for example)? or 3) bad allocation memory issue
+   - 30/96 - Training size: 70, ML model: RF, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+x  There is an error in the hyperopt module, 1) are you using type ="clas" for regression y values instead of type="reg"? or 2) are you using very small partition sizes for validation sets (fix with train="[60,70]" for example)? or 3) bad allocation memory issue
+   - 31/96 - Training size: 70, ML model: GB, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 32/96 - Training size: 70, ML model: GB, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 33/96 - Training size: 70, ML model: GB, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 34/96 - Training size: 70, ML model: GB, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 35/96 - Training size: 70, ML model: GB, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 36/96 - Training size: 70, ML model: GB, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 37/96 - Training size: 70, ML model: NN, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 38/96 - Training size: 70, ML model: NN, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 39/96 - Training size: 70, ML model: NN, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 40/96 - Training size: 70, ML model: NN, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 41/96 - Training size: 70, ML model: NN, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 42/96 - Training size: 70, ML model: NN, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 43/96 - Training size: 70, ML model: MVL, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 44/96 - Training size: 70, ML model: MVL, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 45/96 - Training size: 70, ML model: MVL, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 46/96 - Training size: 70, ML model: MVL, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 47/96 - Training size: 70, ML model: MVL, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 48/96 - Training size: 70, ML model: MVL, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 49/96 - Training size: 80, ML model: RF, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 50/96 - Training size: 80, ML model: RF, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 51/96 - Training size: 80, ML model: RF, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 52/96 - Training size: 80, ML model: RF, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 53/96 - Training size: 80, ML model: RF, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 54/96 - Training size: 80, ML model: RF, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 55/96 - Training size: 80, ML model: GB, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 56/96 - Training size: 80, ML model: GB, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 57/96 - Training size: 80, ML model: GB, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 58/96 - Training size: 80, ML model: GB, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 59/96 - Training size: 80, ML model: GB, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 60/96 - Training size: 80, ML model: GB, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 61/96 - Training size: 80, ML model: NN, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 62/96 - Training size: 80, ML model: NN, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 63/96 - Training size: 80, ML model: NN, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 64/96 - Training size: 80, ML model: NN, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 65/96 - Training size: 80, ML model: NN, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 66/96 - Training size: 80, ML model: NN, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 67/96 - Training size: 80, ML model: MVL, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 68/96 - Training size: 80, ML model: MVL, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 69/96 - Training size: 80, ML model: MVL, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 70/96 - Training size: 80, ML model: MVL, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 71/96 - Training size: 80, ML model: MVL, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 72/96 - Training size: 80, ML model: MVL, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 73/96 - Training size: 90, ML model: RF, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 74/96 - Training size: 90, ML model: RF, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 75/96 - Training size: 90, ML model: RF, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 76/96 - Training size: 90, ML model: RF, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 77/96 - Training size: 90, ML model: RF, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 78/96 - Training size: 90, ML model: RF, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 79/96 - Training size: 90, ML model: GB, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 80/96 - Training size: 90, ML model: GB, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 81/96 - Training size: 90, ML model: GB, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 82/96 - Training size: 90, ML model: GB, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 83/96 - Training size: 90, ML model: GB, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 84/96 - Training size: 90, ML model: GB, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 85/96 - Training size: 90, ML model: NN, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 86/96 - Training size: 90, ML model: NN, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 87/96 - Training size: 90, ML model: NN, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 88/96 - Training size: 90, ML model: NN, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 89/96 - Training size: 90, ML model: NN, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 90/96 - Training size: 90, ML model: NN, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 91/96 - Training size: 90, ML model: MVL, seed: 0 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 92/96 - Training size: 90, ML model: MVL, seed: 8 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 93/96 - Training size: 90, ML model: MVL, seed: 19 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 94/96 - Training size: 90, ML model: MVL, seed: 43 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 95/96 - Training size: 90, ML model: MVL, seed: 70 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+   - 96/96 - Training size: 90, ML model: MVL, seed: 233 
+   x  Variables removed for having NaN values after standardization:
+      - nF12Ring
+
+o  Heatmap_ML_models_No_PFI succesfully created in GENERATE/Raw_data
+
+o  Heatmap_ML_models_PFI succesfully created in GENERATE/Raw_data
+
+Time GENERATE: 3496.97 seconds
+
